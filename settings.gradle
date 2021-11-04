@@ -2,3 +2,4 @@ rootProject.name = 'shoppr'
 
 include 'discovery-service'
 include 'gateway'
+include 'auth-service'
