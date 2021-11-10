@@ -1,19 +1,57 @@
+buildscript {
+    ext {
+        springBootVersion = '2.5.6'
+        springCloudVersion = '2020.0.4'
+        lombokVersion = '1.18.6'
+        reactorExtraVersion = '3.3.6.RELEASE'
+        reactorKafkaVersion = '1.2.5.RELEASE'
+        mockitoVersion = '2.23.0'
+        liquibaseVersion = '4.4.0'
+        postgresqlVersion = '42.2.5'
+        reactorCoreVersion = '3.2.6.RELEASE'
+        springDependencyManagementVersion = "1.0.11.RELEASE"
+    }
+}
+
 plugins {
     id 'java'
+    id 'java-library'
+    id 'org.springframework.boot' version "$springBootVersion"
+    id 'io.spring.dependency-management' version "$springDependencyManagementVersion"
+}
+
+bootJar {
+    enabled = false
 }
 
 group 'ru.nik'
 version '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+    tasks.withType(Test) {
+        systemProperty "file.encoding", "UTF-8"
+    }
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-}
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
 
-test {
-    useJUnitPlatform()
+    group = 'ru.nik'
+    sourceCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+    }
 }
