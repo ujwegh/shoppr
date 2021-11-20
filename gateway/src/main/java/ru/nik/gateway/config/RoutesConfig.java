@@ -11,8 +11,12 @@ public class RoutesConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("first", r -> r.path("/hello")
+                .route("auth", r -> r.path("/hello")
                         .uri("lb://AUTH"))
+                .route("products", r -> r.path("/v1/products/**")
+                        .uri("lb://PRODUCTS"))
+                .route("notifications", r -> r.path("/v1/notifications/**")
+                        .uri("lb://NOTIFICATIONS"))
                 .build();
     }
 }

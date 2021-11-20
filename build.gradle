@@ -17,6 +17,7 @@ buildscript {
 plugins {
     id 'java'
     id 'java-library'
+    id 'maven-publish'
     id 'org.springframework.boot' version "$springBootVersion"
     id 'com.google.cloud.tools.jib' version "$jibVersion" apply false
     id 'io.spring.dependency-management' version "$springDependencyManagementVersion"
@@ -47,6 +48,7 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'maven-publish'
 
     group = 'ru.nik'
     sourceCompatibility = JavaVersion.VERSION_11

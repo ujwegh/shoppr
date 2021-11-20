@@ -1,0 +1,43 @@
+buildscript {
+    ext {
+        starterVersion = '1.0'
+    }
+}
+
+group 'ru.nik'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+        mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
+    }
+}
+
+dependencies {
+    api("ru.nik:shoppr-starter:$starterVersion")
+    api("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId 'products-client'
+            from components.java
+        }
+    }
+}
