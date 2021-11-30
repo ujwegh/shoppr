@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="make starter + InternalRequestExecutor + error mapping">
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="add graylog logging + fix logging">
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/gc.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
@@ -21,35 +21,14 @@
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/ru/nik/notifications/config/ErrorContextConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ErrorContextConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/exceptions/ExampleErrorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoErrorAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoWebExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/InternalErrorInfoResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapperConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/logging/LoggingWebFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/WebFluxContextConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/decorators/HttpLoggingRequestDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/decorators/HttpLoggingResponseDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/products-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/starter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/LoggingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/logging/LoggingUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,11 +185,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\auth-service" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\discovery-service" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\gateway" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\notifications" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\java\ru\nik\commons\webflux" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products\src\main\java\ru\nik\products\exceptions" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
@@ -372,6 +351,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.shoppr [clean]" />
+      <item itemvalue="Gradle.shoppr:notifications [clean]" />
+      <item itemvalue="Gradle.shoppr:products:products-client [publishToMavenLocal]" />
+      <item itemvalue="Gradle.shoppr:starter [publishToMavenLocal]" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.NotificationsApplication" />
+      <item itemvalue="Spring Boot.ProductsApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.shoppr:starter [publishToMavenLocal]" />
@@ -398,7 +388,7 @@
       <workItem from="1637510850991" duration="30846000" />
       <workItem from="1637911283463" duration="594000" />
       <workItem from="1637913147098" duration="159000" />
-      <workItem from="1637913331299" duration="11526000" />
+      <workItem from="1637913331299" duration="14164000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -407,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637423435825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add graylog logging + fix logging">
+      <created>1638251947468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638251947468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +412,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make starter + InternalRequestExecutor + error mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="make starter + InternalRequestExecutor + error mapping" />
+    <MESSAGE value="add graylog logging + fix logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="add graylog logging + fix logging" />
   </component>
 </project>

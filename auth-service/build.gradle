@@ -1,3 +1,9 @@
+buildscript {
+    ext {
+        starterVersion = '1.0'
+    }
+}
+
 plugins {
     id 'com.google.cloud.tools.jib'
 }
@@ -11,13 +17,9 @@ configurations {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    api("ru.nik:shoppr-starter:$starterVersion")
     compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'
 }
 
 dependencyManagement {

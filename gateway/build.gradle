@@ -1,3 +1,9 @@
+buildscript {
+    ext {
+        starterVersion = '1.0'
+    }
+}
+
 plugins {
     id 'com.google.cloud.tools.jib'
 }
@@ -5,9 +11,8 @@ plugins {
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
+    api("ru.nik:shoppr-starter:$starterVersion")
     implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
