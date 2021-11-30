@@ -21,101 +21,35 @@
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/discovery-service/shoppr.discovery-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/notifications/shoppr.notifications.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products-client/shoppr.products-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products-client/shoppr.products-client.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products-client/shoppr.products-client.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products/products-client/shoppr.products.products-client.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/products/shoppr.products.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/shoppr.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/shoppr.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/shoppr.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/starter/shoppr.starter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/starter/shoppr.starter.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/ru/nik/notifications/NotificationsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/ru/nik/notifications/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/test/java/ru/nik/notifications/NotificationsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/ProductsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/config/ProductsClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/model/ProductsHelloExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/ProductsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/ProductsHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/test/java/ru/nik/products/ProductsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/LoggingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/RetryableHttpRequestExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/HttpExchangeConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/ParametersHttpExchangeConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/StarterConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/WebClientConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/Function2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/Function3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ResponseCodeError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ResponseCodeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/DefaultExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ErrorInfoExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/NotFoundExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ResponseCodeExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ServiceExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/SystemExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/model/ErrorInfoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/model/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/model/SystemException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutorErrorResponseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/mapper/ObjectJsonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/mapper/ObjectJsonMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/retry/RetryProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/HttpErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/handler/NoOpHttpErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/auth-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/auth-service.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/auth-service/shoppr.auth-service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/auth-service/shoppr.auth-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gateway.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/nik/authservice/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/nik/authservice/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/ru/nik/gateway/config/RoutesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/ru/nik/gateway/config/RoutesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/logback.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/config/logback.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/config/logback.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/config/logback.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/ru/nik/notifications/config/ErrorContextConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/config/logback.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ErrorContextConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/exceptions/ExampleErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoErrorAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/ErrorInfoWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/InternalErrorInfoResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapperConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/logging/LoggingWebFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/WebFluxContextConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/decorators/HttpLoggingRequestDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/webflux/decorators/HttpLoggingResponseDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/starter/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/HttpRequestExecutorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/LoggingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/logging/LoggingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/errors/exceptions/mapper/ExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/internal/InternalRequestExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +76,9 @@
         <task path="$PROJECT_DIR$/products/products-client">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/notifications">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -152,7 +89,25 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
                 <item name="notifications" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -233,6 +188,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -242,24 +198,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-service" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.view.ui.settings.KubernetesViewConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\notifications" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\java\ru\nik\commons\webflux" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products\src\main\java\ru\nik\products\exceptions" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\resources" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products\products-client\src\main\resources" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products\products-client" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.nik.products.config" />
       <recent name="ru.nik.commons.http.config" />
+      <recent name="ru.nik.commons.http.errors" />
+      <recent name="ru.nik.commons.webflux" />
+      <recent name="ru.nik.commons.http.logging" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,15 +231,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.shoppr:starter [publishToMavenLocal]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,6 +246,27 @@
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="shoppr:notifications [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notifications" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -369,7 +349,18 @@
     </configuration>
     <configuration name="NotificationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppr.notifications.main" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.notifications.NotificationsApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -384,6 +375,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.shoppr:starter [publishToMavenLocal]" />
+        <item itemvalue="Gradle.shoppr:notifications [clean]" />
         <item itemvalue="Gradle.shoppr:products:products-client [publishToMavenLocal]" />
         <item itemvalue="Gradle.shoppr [clean]" />
       </list>
@@ -402,8 +394,20 @@
       <updated>1637404028472</updated>
       <workItem from="1637404030046" duration="995000" />
       <workItem from="1637405063103" duration="6911000" />
-      <workItem from="1637414919076" duration="7359000" />
+      <workItem from="1637414919076" duration="9892000" />
+      <workItem from="1637510850991" duration="30846000" />
+      <workItem from="1637911283463" duration="594000" />
+      <workItem from="1637913147098" duration="159000" />
+      <workItem from="1637913331299" duration="11526000" />
     </task>
+    <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
+      <created>1637423435825</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637423435825</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

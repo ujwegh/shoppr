@@ -1,3 +1,7 @@
+logging:
+  config: products/config/logback.groovy
+
+
 server:
   port: 8101
 
@@ -12,6 +16,8 @@ spring:
   cloud:
     config:
       enabled: false
+  zipkin:
+    enabled: false
 
 webClient:
   loadBalanced:

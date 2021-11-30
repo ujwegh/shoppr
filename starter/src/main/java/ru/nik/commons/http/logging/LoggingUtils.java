@@ -1,4 +1,4 @@
-package ru.nik.commons.http;
+package ru.nik.commons.http.logging;
 
 import lombok.experimental.UtilityClass;
 import org.apache.commons.lang.StringUtils;
@@ -98,8 +98,7 @@ public class LoggingUtils {
                                   String body,
                                   Map<String, String> headers,
                                   boolean isLogBody) {
-        StringBuilder message =
-                new StringBuilder(String.format("%s REQUEST [%s]: [%s] %s ", requestTypePrefix, logPrefix, method, uri));
+        StringBuilder message = new StringBuilder(String.format("%s REQUEST [%s]: [%s] %s ", requestTypePrefix, logPrefix, method, uri));
         enrichHeaders(headers, message);
 
         if (log.isDebugEnabled() || isLogBody) {
@@ -149,8 +148,11 @@ public class LoggingUtils {
         log.error(format, throwable);
     }
 
-    public static void logError(Logger log, String errorTypePrefix,
-                                String logPrefix, long timeNano, String responseHttpStatus,
+    public static void logError(Logger log,
+                                String errorTypePrefix,
+                                String logPrefix,
+                                long timeNano,
+                                String responseHttpStatus,
                                 Throwable throwable) {
         log.error(String.format("%s ERROR [%s]: [%s] [%s] %s",
                 errorTypePrefix,
@@ -161,9 +163,13 @@ public class LoggingUtils {
         ), throwable);
     }
 
-    public static void logError(Logger log, String errorTypePrefix,
-                                String logPrefix, long timeNano, String responseHttpStatus,
-                                Throwable throwable, String url) {
+    public static void logError(Logger log,
+                                String errorTypePrefix,
+                                String logPrefix,
+                                long timeNano,
+                                String responseHttpStatus,
+                                Throwable throwable,
+                                String url) {
         log.error(String.format("%s ERROR [%s]: [%s] [%s] [%s] %s",
                 errorTypePrefix,
                 logPrefix,
@@ -174,8 +180,10 @@ public class LoggingUtils {
         ), throwable);
     }
 
-    public static void logError(Logger log, String errorTypePrefix,
-                                long timeNano, String responseHttpStatus,
+    public static void logError(Logger log,
+                                String errorTypePrefix,
+                                long timeNano,
+                                String responseHttpStatus,
                                 Throwable throwable) {
         log.error(String.format("%s ERROR: [%s] [%s] %s",
                 errorTypePrefix,
@@ -185,9 +193,13 @@ public class LoggingUtils {
         ), throwable);
     }
 
-    public static void logWarn(Logger log, String errorTypePrefix,
-                               String logPrefix, long timeNano, String responseHttpStatus,
-                               Throwable throwable, String url) {
+    public static void logWarn(Logger log,
+                               String errorTypePrefix,
+                               String logPrefix,
+                               long timeNano,
+                               String responseHttpStatus,
+                               Throwable throwable,
+                               String url) {
         log.warn(String.format("%s WARN [%s]: [%s] [%s] [%s] %s",
                 errorTypePrefix,
                 logPrefix,
@@ -364,11 +376,11 @@ public class LoggingUtils {
     }
 
     public static Mono<Void> logError(Logger log, String message, Throwable throwable) {
-        return Mono.subscriberContext()
+        return Mono.deferContextual(Mono::just)
                 .flatMap(context -> logError(log, context, message, throwable));
     }
 
-    public static Mono<Void> logError(Logger log, Context context, String message, Throwable throwable) {
+    public static Mono<Void> logError(Logger log, ContextView context, String message, Throwable throwable) {
         return Mono.just(context.getOrEmpty(LOG_PREFIX).orElse(""))
                 .doOnSuccess(prefix -> {
                     String format = String.format("%s %s", prefix, message);

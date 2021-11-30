@@ -14,6 +14,7 @@ import reactor.util.context.ContextView;
 import ru.nik.commons.http.config.HttpExchangeConfiguration;
 import ru.nik.commons.http.errors.Function2;
 import ru.nik.commons.http.errors.Function3;
+import ru.nik.commons.http.logging.LoggingUtils;
 
 import java.net.URI;
 import java.util.HashMap;
@@ -52,27 +53,15 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
 
     @Override
     public Mono<String> doGETRequest(String path, Map<String, String> additionalHeaders) {
-
-        String baseUrl = getBaseUrl();
-
-        return doRequestWithLog(
-                URI.create(baseUrl + path),
-                path,
-                null,
-                null,
-                HttpMethod.GET,
-                additionalHeaders
-        );
+        return doGETRequest(path, null, additionalHeaders);
     }
 
     private String getBaseUrl() {
         return httpExchangeConfiguration == null ? "" : httpExchangeConfiguration.getBaseUrl();
     }
 
-    @Override
     public Mono<String> doGETRequest(String path,
                                      String request,
-                                     String request4log,
                                      Map<String, String> additionalHeaders) {
 
         String baseUrl = getBaseUrl();
@@ -81,7 +70,7 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
                 URI.create(baseUrl + path),
                 path,
                 request,
-                request4log,
+                request,
                 HttpMethod.GET,
                 additionalHeaders
         );
@@ -147,7 +136,7 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
                 URI.create(baseUrl + path),
                 path,
                 null,
-                "",
+                null,
                 HttpMethod.GET,
                 additionalHeaders
         );
@@ -156,7 +145,6 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
     @Override
     public Mono<byte[]> doPOSTRequestBinary(String path,
                                             String request,
-                                            String request4log,
                                             Map<String, String> additionalHeaders) {
 
         String baseUrl = getBaseUrl();
@@ -165,7 +153,7 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
                 URI.create(baseUrl + path),
                 path,
                 request,
-                request4log,
+                request,
                 HttpMethod.POST,
                 additionalHeaders
         );
@@ -174,7 +162,6 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
     @Override
     public Mono<String> doPUTRequest(String path,
                                      String request,
-                                     String request4log,
                                      Map<String, String> additionalHeaders) {
 
         String baseUrl = getBaseUrl();
@@ -183,7 +170,7 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
                 URI.create(baseUrl + path),
                 path,
                 request,
-                request4log,
+                request,
                 HttpMethod.PUT,
                 additionalHeaders
         );
@@ -370,7 +357,7 @@ public class HttpRequestExecutorImpl implements HttpRequestExecutor {
             Map<String, String> map = new HashMap<>();
             map.putAll(additionalHeaders);
             map.putAll(baseHeaders);
-//            additionalHeaders.putAll(baseHeaders);
+
             return map;
         }
     }

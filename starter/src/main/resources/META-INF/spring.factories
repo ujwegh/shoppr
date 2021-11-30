@@ -1,1 +1,3 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.nik.commons.http.config.StarterConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.nik.commons.http.config.StarterConfiguration,\
+  ru.nik.commons.webflux.WebFluxContextConfiguration, \
+  ru.nik.commons.http.errors.exceptions.mapper.ExceptionMapperConfiguration

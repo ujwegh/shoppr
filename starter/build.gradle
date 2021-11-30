@@ -1,3 +1,10 @@
+buildscript {
+    ext{
+        logbackVersion = '4.0.0'
+        groovyVersion = '2.4.15'
+    }
+}
+
 group 'ru.nik'
 version '1.0'
 
@@ -40,6 +47,12 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //logging
+    api("de.siegmar:logback-gelf:${logbackVersion}")
+    api("org.codehaus.groovy:groovy-all:${groovyVersion}")
+    api("org.springframework.cloud:spring-cloud-starter-sleuth")
+    api("log4j:log4j:1.2.17")
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'

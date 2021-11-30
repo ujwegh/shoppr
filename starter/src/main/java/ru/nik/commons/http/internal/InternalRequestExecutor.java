@@ -10,16 +10,16 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.util.context.ContextView;
 import reactor.util.retry.Retry;
-import ru.nik.commons.http.LoggingUtils;
 import ru.nik.commons.http.RetryableHttpRequestExecutor;
 import ru.nik.commons.http.config.HttpExchangeConfiguration;
+import ru.nik.commons.http.logging.LoggingUtils;
 import ru.nik.commons.retry.RetryProperties;
 
 import java.net.ConnectException;
 import java.time.Duration;
 import java.util.Map;
 
-import static ru.nik.commons.http.LoggingUtils.addUniqueRequestKey;
+import static ru.nik.commons.http.logging.LoggingUtils.addUniqueRequestKey;
 
 @Slf4j
 public class InternalRequestExecutor extends RetryableHttpRequestExecutor {
@@ -53,10 +53,11 @@ public class InternalRequestExecutor extends RetryableHttpRequestExecutor {
 
     @Override
     public Mono<String> doGETRequest(String path, Map<String, String> additionalHeaders) {
-        return Mono.deferContextual(contextView -> super.doGETRequest(
-                path,
-                mergeOverwriteHeaders(additionalHeaders, clientAdditionalHeaders(contextView))
-        ));
+        return Mono.deferContextual(contextView ->
+                super.doGETRequest(
+                        path,
+                        mergeOverwriteHeaders(additionalHeaders, clientAdditionalHeaders(contextView))
+                ));
     }
 
     @Override
@@ -87,10 +88,10 @@ public class InternalRequestExecutor extends RetryableHttpRequestExecutor {
     }
 
     @Override
-    public Mono<String> doPUTRequest(String path, String request, String request4log, Map<String, String> additionalHeaders) {
+    public Mono<String> doPUTRequest(String path, String request, Map<String, String> additionalHeaders) {
         return Mono.deferContextual(contextView ->
                 super.doPUTRequest(
-                        path, request, request4log,
+                        path, request,
                         mergeOverwriteHeaders(additionalHeaders, clientAdditionalHeaders(contextView))
                 ));
     }
