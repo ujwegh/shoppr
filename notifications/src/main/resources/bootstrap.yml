@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: notifications
+  cloud:
+    config:
+      uri: http://localhost:8888
+      label: default
+
+logging:
+  config: ${spring.cloud.config.uri}/notifications/default/${spring.cloud.config.label}/logback.groovy
+  pattern:
+    dateformat: "yyyy-MM-dd HH:mm:ss.SSS, Europe/Moscow"

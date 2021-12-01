@@ -1,9 +1,8 @@
 logging:
-  config: products/config/logback.groovy
-
+  config: notifications/config/logback.groovy
 
 server:
-  port: 8101
+  port: 8102
 
 eureka:
   client:
@@ -12,7 +11,7 @@ eureka:
 
 spring:
   application:
-    name: products
+    name: notifications
   cloud:
     config:
       enabled: false
@@ -21,6 +20,12 @@ spring:
 
 webClient:
   loadBalanced:
-    acquireTimeout: 100
     maxConnections: 100
     isKeepAlive: false
+  default:
+    maxConnections: 100
+    isKeepAlive: false
+
+products:
+  service:
+    url: http://products

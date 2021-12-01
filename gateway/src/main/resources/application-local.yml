@@ -1,8 +1,5 @@
-logging:
-  config: notifications/config/logback.groovy
-
 server:
-  port: 8102
+  port: 8090
 
 eureka:
   client:
@@ -11,19 +8,15 @@ eureka:
 
 spring:
   application:
-    name: notifications
+    name: gateway
   cloud:
     config:
       enabled: false
-  zipkin:
-    enabled: false
 
 webClient:
   loadBalanced:
-    acquireTimeout: 100
     maxConnections: 100
     isKeepAlive: false
-
-products:
-  service:
-    url: http://products
+  default:
+    maxConnections: 100
+    isKeepAlive: false

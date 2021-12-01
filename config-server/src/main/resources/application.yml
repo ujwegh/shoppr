@@ -1,0 +1,29 @@
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery.${NAMESPACE_FULL}.svc.cluster.local:8080/eureka
+  instance:
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ujwegh/shoppr-config
+          searchPaths: '{application}'
+          refresh-rate: 30
+
+webClient:
+  loadBalanced:
+    maxConnections: 100
+    isKeepAlive: false
+  default:
+    maxConnections: 100
+    isKeepAlive: false

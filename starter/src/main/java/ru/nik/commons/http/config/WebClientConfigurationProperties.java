@@ -11,7 +11,6 @@ public class WebClientConfigurationProperties {
     /**
      * timeouts in millis
      */
-    private int acquireTimeout = 100;
     private int connectTimeout = 10000;
     private int readTimeout = 10000;
     private int writeTimeout = 10000;

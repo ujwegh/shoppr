@@ -1,6 +1,6 @@
 buildscript {
     ext{
-        logbackVersion = '4.0.0'
+        logbackGelfVersion = '4.0.0'
         groovyVersion = '2.4.15'
         caffeine = '3.0.4'
         micrometer = '1.7.1'
@@ -57,7 +57,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     //logging
-    api("de.siegmar:logback-gelf:${logbackVersion}")
+    api("de.siegmar:logback-gelf:${logbackGelfVersion}")
     api("org.codehaus.groovy:groovy-all:${groovyVersion}")
     api("org.springframework.cloud:spring-cloud-starter-sleuth")
     api("log4j:log4j:${log4j}")

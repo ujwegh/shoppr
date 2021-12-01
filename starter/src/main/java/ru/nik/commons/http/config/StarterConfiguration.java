@@ -4,10 +4,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.util.unit.DataSize;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
@@ -28,10 +30,25 @@ import static java.lang.Math.toIntExact;
 @Configuration
 public class StarterConfiguration {
 
+    @Value("${webClient.default.maxConnections}")
+    private int defaultWebClientMaxConnections;
+    @Value("${webClient.default.isKeepAlive}")
+    private boolean defaultWebClientIsKeepAlive;
+
     @Bean
     @ConfigurationProperties("web-client.load-balanced")
     public WebClientConfigurationProperties loadBalancedConfigurationProperties() {
         return new WebClientConfigurationProperties();
+    }
+
+    @Bean
+    @Primary
+    public WebClient webClient() {
+        HttpClient httpClient = HttpClient.create(ConnectionProvider
+                .create("defaultWebClient", defaultWebClientMaxConnections))
+                .keepAlive(defaultWebClientIsKeepAlive);
+        return WebClient.builder()
+                .clientConnector(new ReactorClientHttpConnector(httpClient)).build();
     }
 
     @Bean
@@ -79,9 +96,9 @@ public class StarterConfiguration {
     }
 
     @Bean
-    public InternalRequestExecutors internalRequestExecutors(@LoadBalanced WebClient loadBalancedWebClient,
+    public InternalRequestExecutors internalRequestExecutors(@LoadBalanced WebClient webClient,
                                                              RetryProperties retryProperties,
                                                              InternalRequestExecutorErrorResponseMapper internalRequestExecutorErrorResponseMapper) {
-        return new InternalRequestExecutors(loadBalancedWebClient, retryProperties, internalRequestExecutorErrorResponseMapper);
+        return new InternalRequestExecutors(webClient, retryProperties, internalRequestExecutorErrorResponseMapper);
     }
 }

@@ -1,3 +1,11 @@
+buildscript {
+    ext {
+        logbackGelfVersion = '4.0.0'
+        groovyVersion = '2.4.15'
+    }
+}
+
+
 plugins {
     id 'com.google.cloud.tools.jib'
 }
@@ -7,6 +15,10 @@ version = '0.0.1-SNAPSHOT'
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    //logging
+    api("de.siegmar:logback-gelf:$logbackGelfVersion")
+    api("org.codehaus.groovy:groovy-all:$groovyVersion")
 }
 
 dependencyManagement {

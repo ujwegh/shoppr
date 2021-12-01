@@ -11,6 +11,7 @@
         <module name="shoppr.products.main" />
         <module name="shoppr.notifications.main" />
         <module name="shoppr.auth-service.main" />
+        <module name="shoppr.config-server.main" />
         <module name="shoppr.starter.main" />
       </profile>
       <profile name="Gradle Imported" enabled="true">
