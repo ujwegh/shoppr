@@ -13,3 +13,11 @@ spring:
   cloud:
     config:
       enabled: false
+
+webClient:
+  loadBalanced:
+    maxConnections: 100
+    isKeepAlive: false
+  default:
+    maxConnections: 100
+    isKeepAlive: false

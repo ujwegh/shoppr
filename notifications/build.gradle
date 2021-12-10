@@ -4,10 +4,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'com.google.cloud.tools.jib'
-}
-
 version = '0.0.1-SNAPSHOT'
 
 configurations {
@@ -37,10 +33,4 @@ dependencyManagement {
 
 test {
     useJUnitPlatform()
-}
-
-jib {
-    to {
-        image = "${project.findProperty('registry_url')}/${project.name}:${project.findProperty('image_tag') ?: 'latest'}"
-    }
 }

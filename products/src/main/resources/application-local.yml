@@ -1,7 +1,6 @@
 logging:
   config: products/config/logback.groovy
 
-
 server:
   port: 8101
 

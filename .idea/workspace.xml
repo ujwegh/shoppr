@@ -21,40 +21,64 @@
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/ru/nik/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/ru/nik/configserver/ConfigServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/build-image.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/chart/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/chart/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/chart/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/env/kubernetes/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/chart/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/chart/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/chart/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/env/kubernetes/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/chart/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/chart/templates/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/chart/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/env/kubernetes/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/chart/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/chart/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/chart/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/env/kubernetes/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/build-image.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/env/build-image.sh" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/env/build-image.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/ru/nik/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/java/ru/nik/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/env/build-image.sh" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/env/build-image.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/test/java/ru/nik/discoveryservice/DiscoveryServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/env/build-image.sh" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/env/build-image.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notifications/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/products-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/starter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/StarterConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/StarterConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/WebClientConfigurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/config/WebClientConfigurationProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +117,9 @@
         <task path="$PROJECT_DIR$/config-server">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/products">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -114,60 +141,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="config-server" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="discovery-service" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="discovery-service" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="discovery-service" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="notifications" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="notifications" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="notifications" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
                 <item name="starter" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -182,6 +155,19 @@
                 <item name="starter" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="starter" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="starter" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -201,8 +187,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
-    <option name="context" value="dev" />
-    <option name="namespace" value="dev" />
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="docker-desktop" />
   </component>
   <component name="ProjectId" id="21BAIj0MSh8ogt9syINY8lScGOU" />
   <component name="ProjectViewState">
@@ -222,7 +208,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/products" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -231,11 +217,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\auth-service\src\main\resources" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\config-server" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\discovery-service\src\main\resources" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\gateway\src\main\resources" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products\src\main\resources" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\notifications\env\kubernetes\chart\templates" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\gateway\env\kubernetes\chart\templates" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\discovery-service\env\kubernetes\chart\templates" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\config-server\env\kubernetes\chart\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
@@ -255,61 +241,21 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.config-server [clean]">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="config-server [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:discovery-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/discovery-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="shoppr [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -330,7 +276,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="shoppr:notifications [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/notifications" />
@@ -341,7 +287,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="bootBuildImage" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -351,7 +297,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="shoppr:starter [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/products/products-client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/starter" />
@@ -370,6 +337,19 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="build-image.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/config-server/env/build-image.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/config-server/env" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -404,7 +384,6 @@
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.configserver.ConfigServerApplication" />
-      <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -430,7 +409,6 @@
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.discoveryservice.DiscoveryServiceApplication" />
-      <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -494,9 +472,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.shoppr [clean]" />
-      <item itemvalue="Gradle.shoppr:notifications [clean]" />
-      <item itemvalue="Gradle.shoppr:starter [publishToMavenLocal]" />
+      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" />
+      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" />
+      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
+      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
+      <item itemvalue="Shell Script.build-image.sh" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -504,16 +484,14 @@
       <item itemvalue="Spring Boot.ProductsApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication (1)" />
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:discovery-service [clean]" />
-      <item itemvalue="Gradle.config-server [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.config-server [clean]" />
-        <item itemvalue="Gradle.shoppr [clean]" />
-        <item itemvalue="Gradle.shoppr:starter [publishToMavenLocal]" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:discovery-service [clean]" />
-        <item itemvalue="Gradle.shoppr:notifications [clean]" />
+        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
+        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
+        <item itemvalue="Shell Script.build-image.sh" />
+        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" />
       </list>
     </recent_temporary>
   </component>
@@ -534,7 +512,11 @@
       <workItem from="1637510850991" duration="30846000" />
       <workItem from="1637911283463" duration="594000" />
       <workItem from="1637913147098" duration="159000" />
-      <workItem from="1637913331299" duration="30068000" />
+      <workItem from="1637913331299" duration="36741000" />
+      <workItem from="1638377540139" duration="38009000" />
+      <workItem from="1638774343223" duration="594000" />
+      <workItem from="1638779739620" duration="29629000" />
+      <workItem from="1639033227098" duration="14292000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -564,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638290460550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add config server">
+      <created>1638354182168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638354182168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,6 +564,7 @@
     <MESSAGE value="add graylog logging + fix logging" />
     <MESSAGE value="little refactoring" />
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="add config server" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config server" />
   </component>
 </project>

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: discovery-service
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+  server:
+    enable-self-preservation: false
+
+webClient:
+  loadBalanced:
+    maxConnections: 100
+    isKeepAlive: false
+  default:
+    maxConnections: 100
+    isKeepAlive: false

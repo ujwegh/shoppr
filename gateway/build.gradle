@@ -4,10 +4,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'com.google.cloud.tools.jib'
-}
-
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
@@ -29,10 +25,4 @@ test {
 
 bootJar {
     archiveFileName = "${project.name}.jar"
-}
-
-jib {
-    to {
-        image = "${project.findProperty('registry_url')}/${project.name}:${project.findProperty('image_tag') ?: 'latest'}"
-    }
 }

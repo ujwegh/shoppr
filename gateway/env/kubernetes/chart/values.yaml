@@ -1,0 +1,20 @@
+name: "gateway"
+
+image: "gateway"
+imageTag:
+imagePullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+spring:
+  cloud:
+    config:
+      uri: "http://config-server:8888"
+
+logging:
+  config: "${spring.cloud.config.uri}/${service.name}/${service.name}/${spring.profiles.active}/logback.groovy"
+
+xmx:
+  value: -Xmx1500m

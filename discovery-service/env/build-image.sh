@@ -12,20 +12,19 @@ if [ $# -lt 1 ]; then
   exit 1
 fi
 
+TAG_NAME=${1}
+SERVICE_NAME="discovery-service"
+
 WORK_DIR=$(
   cd "$(dirname "$0")"
   cd ..
   pwd
 )
 
-REGISTRY_URL="127.0.0.1:5000"
-TAG_NAME=${1}
-SERVICE_NAME="discovery-service"
-echo "$WORK_DIR"
-
 cd "$WORK_DIR" || exit
 echo "$WORK_DIR"
-./gradlew clean buildDependents
-./gradlew jib -Pregistry_url=$REGISTRY_URL -Pimage_tag=$TAG_NAME -Djib.allowInsecureRegistries=true --stacktrace || true
 
-echo "IMAGE: ${REGISTRY_URL}/${SERVICE_NAME}:${TAG_NAME}"
+./gradlew clean buildDependents
+./gradlew bootBuildImage --imageName=${SERVICE_NAME}/${TAG_NAME}
+
+echo "IMAGE CREATED"

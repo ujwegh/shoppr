@@ -46,6 +46,8 @@ dependencies {
     api("org.springframework.cloud:spring-cloud-sleuth-zipkin")
     api("org.springframework.boot:spring-boot-starter-actuator")
     api("org.springframework.cloud:spring-cloud-commons")
+    api("org.springframework.cloud:spring-cloud-starter-config")
+    api("org.springframework.cloud:spring-cloud-starter")
     api("com.github.ben-manes.caffeine:caffeine:${caffeine}")
     api("io.micrometer:micrometer-core:${micrometer}")
     api("io.github.resilience4j:resilience4j-spring-boot2:${resilience4j}")

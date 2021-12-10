@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.name }}
+  labels:
+    app: {{ .Values.name }}
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  serviceName: {{ .Values.name }}
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.name }}
+    spec:
+      containers:
+        - name: {{ .Values.name }}
+          image: "{{ .Values.image }}/{{ .Values.imageTag }}"
+          imagePullPolicy: {{ default "" .Values.imagePullPolicy | quote }}
+          env:
+            - name: SERVICE_NAME
+              value: {{ .Values.name }}
+            - name: NAMESPACE_FULL
+              value: {{ .Values.namespace.full }}
+            - name: NAMESPACE_SHORT
+              value: {{ .Values.namespace.short }}
+            - name: LOGGING_CONFIG
+              value: {{ .Values.logging.config }}
+            - name: SPRING_PROFILES_ACTIVE
+              value: {{ .Values.spring.profiles.active }}
+            - name: SPRING_CLOUD_CONFIG_URI
+              value: {{ .Values.spring.cloud.config.uri }}
+            - name: SPRING_CLOUD_CONFIG_LABEL
+              value: {{ .Values.spring.cloud.config.label }}
+            - name: SPRING_CLOUD_CONFIG_FAIL_FAST
+              value: "true"
+            - name: LOGGING_PATH
+              value: "/var/log/{{ .Values.name }}"
+            - name: JAVA_TOOL_OPTIONS
+              value: {{ .Values.xmx.value }}
+          ports:
+            - name: "port"
+              containerPort: {{ .Values.service.port }}
+          resources:
+            limits:
+              memory: 2Gi
+              cpu: "5"
+            requests:
+              memory: 2Gi
+              cpu: "10m"
+          volumeMounts:
+            - mountPath: "/var/log"
+              name: log-volume
+      imagePullSecrets:
+        - name: regcred
+  volumeClaimTemplates:
+    - metadata:
+        labels:
+          app: {{ .Values.name }}
+        name: log-volume
+      spec:
+        accessModes:
+          - ReadWriteMany
+        resources:
+          requests:
+            storage: 5Gi

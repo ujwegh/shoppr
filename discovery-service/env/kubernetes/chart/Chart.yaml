@@ -1,0 +1,7 @@
+name: service-discovery
+version: 1.0.0
+description: Service-discovery service.
+home: https://github.com/ujwegh/shoppr/discovery-service
+sources:
+- https://github.com/ujwegh/shoppr/discovery-service
+engine: gotpl

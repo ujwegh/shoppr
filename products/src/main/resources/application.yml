@@ -1,10 +1,8 @@
 spring:
   application:
     name: products
-  cloud:
-    config:
-      uri: http://localhost:8888
-      label: default
+  config:
+    import: "configserver:${spring.cloud.config.uri}"
 
 logging:
   config: ${spring.cloud.config.uri}/products/default/${spring.cloud.config.label}/logback.groovy

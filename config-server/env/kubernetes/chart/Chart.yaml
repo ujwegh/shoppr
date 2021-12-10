@@ -1,0 +1,7 @@
+name: config-server
+version: 1.0.0
+description: Configuration server
+home: https://github.com/ujwegh/shoppr/config-server
+sources:
+- https://github.com/ujwegh/shoppr/config-server
+engine: gotpl

@@ -30,6 +30,9 @@ test {
     useJUnitPlatform()
 }
 
+bootJar {
+    enabled = false
+}
 
 publishing {
     publications {

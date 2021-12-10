@@ -1,0 +1,7 @@
+name: notifications
+version: 1.0.0
+description: Notifications service.
+home: https://github.com/ujwegh/shoppr/notifications
+sources:
+- https://github.com/ujwegh/shoppr/notifications
+engine: gotpl

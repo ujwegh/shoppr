@@ -1,0 +1,9 @@
+name: "config-server"
+
+image: "config-server"
+imageTag:
+imagePullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8888

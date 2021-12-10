@@ -1,0 +1,8 @@
+name: gateway
+version: 1.0.0
+description: Gateway
+home: https://github.com/ujwegh/shoppr/gateway
+sources:
+  - https://github.com/ujwegh/shoppr/gateway
+engine: gotpl
+

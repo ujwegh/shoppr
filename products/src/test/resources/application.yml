@@ -13,3 +13,13 @@ spring:
   cloud:
     config:
       enabled: false
+
+webClient:
+  loadBalanced:
+    acquireTimeout: 100
+    maxConnections: 100
+    isKeepAlive: false
+  default:
+    acquireTimeout: 100
+    maxConnections: 100
+    isKeepAlive: false

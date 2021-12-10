@@ -5,12 +5,7 @@ buildscript {
     }
 }
 
-
-plugins {
-    id 'com.google.cloud.tools.jib'
-}
-
-version = '0.0.1-SNAPSHOT'
+version = '1.0'
 
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
@@ -29,10 +24,4 @@ dependencyManagement {
 
 test {
     useJUnitPlatform()
-}
-
-jib {
-    to {
-        image = "${project.findProperty('registry_url')}/${project.name}:${project.findProperty('image_tag') ?: 'latest'}"
-    }
 }
