@@ -1,0 +1,4 @@
+auth:
+  enabled: true
+  rootUser: mongodb
+  rootPassword: "mysecretpassword"

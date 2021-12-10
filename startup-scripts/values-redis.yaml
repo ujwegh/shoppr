@@ -1,0 +1,28 @@
+imageTag:
+pullPolicy: IfNotPresent
+cluster:
+  enabled: false
+usePassword: false
+persistence: {}
+master:
+  resources:
+    limits:
+      memory: 500Mi
+      cpu: "5"
+    requests:
+      memory: 256Mi
+      cpu: "100m"
+  persistence:
+    enabled: false
+    size: 1Gi
+slave:
+  resources:
+    limits:
+      memory: 500Mi
+      cpu: "1"
+    requests:
+      memory: 256Mi
+      cpu: "100m"
+  persistence:
+    enabled: false
+    size: 1Gi

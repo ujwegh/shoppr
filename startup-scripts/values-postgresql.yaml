@@ -1,0 +1,26 @@
+imageTag:
+imagePullPolicy: IfNotPresent
+
+persistence:
+  enabled: true
+  size: 1Gi
+resources:
+  limits:
+    memory: 1G
+    cpu: "1"
+  requests:
+    memory: 512Mi
+    cpu: "100m"
+postgresqlUsername: postgres
+postgresqlPassword: mysecretpassword
+postgresqlExtendedConf: {"sharedBuffers":"500MB","maxConnections":"300"}
+
+pgHbaConfiguration: |-
+  local   all             all                                     trust
+  host    all             all             0.0.0.0/0               trust
+image:
+  registry: docker.io
+  repository: bitnami/postgresql
+  tag: 12.2.0-debian-10-r53
+  pullPolicy: IfNotPresent
+  debug: false
