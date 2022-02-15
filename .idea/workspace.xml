@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="deploy to kubernetes">
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="move to java 17">
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/gc.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
@@ -21,14 +21,42 @@
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/deploy-kafka.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/deploy-mongodb.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/deploy-redis.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/values-mongodb.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/values-postgresql.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-scripts/values-redis.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/mapper/ProductDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/external/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/internal/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/SomeOtherRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/utils/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/utils/MonoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/products/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/products-client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/ProductsHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/external/ProductsHello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/starter/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,48 +105,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="starter" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="starter" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="starter" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="starter" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="starter" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -130,15 +116,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
-    <option name="namespace" value="docker-desktop" />
+    <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="21BAIj0MSh8ogt9syINY8lScGOU" />
   <component name="ProjectViewState">
@@ -159,20 +154,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/startup-scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server/src/test/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.view.ui.settings.KubernetesViewConfigurable" />
+    <property name="project.structure.side.proportion" value="0.2285192" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.nik.products.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\startup-scripts" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\config-server\src\test\resources" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\java\ru\nik\commons\utils" />
+      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\startup-scripts" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\notifications\env\kubernetes\chart\templates" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\gateway\env\kubernetes\chart\templates" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\discovery-service\env\kubernetes\chart\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
@@ -193,18 +191,68 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="AuthServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.nik.authservice.AuthServiceApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":auth-service:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServerApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.nik.configserver.ConfigServerApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":config-server:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -218,48 +266,6 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/notifications" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootBuildImage" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/products/products-client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishToMavenLocal" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -288,19 +294,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="build-image.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/config-server/env/build-image.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/config-server/env" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -423,11 +416,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" />
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" />
       <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
       <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
-      <item itemvalue="Shell Script.build-image.sh" />
+      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [build]" />
+      <item itemvalue="Gradle.AuthServiceApplicationTests" />
+      <item itemvalue="Gradle.ConfigServerApplicationTests" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -439,10 +432,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
+        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [build]" />
+        <item itemvalue="Gradle.ConfigServerApplicationTests" />
+        <item itemvalue="Gradle.AuthServiceApplicationTests" />
         <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
-        <item itemvalue="Shell Script.build-image.sh" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:products:products-client [publishToMavenLocal]" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:notifications [bootBuildImage]" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +460,18 @@
       <workItem from="1638377540139" duration="38009000" />
       <workItem from="1638774343223" duration="594000" />
       <workItem from="1638779739620" duration="29629000" />
-      <workItem from="1639033227098" duration="24975000" />
+      <workItem from="1639033227098" duration="45021000" />
+      <workItem from="1639724560214" duration="1190000" />
+      <workItem from="1639751945152" duration="1188000" />
+      <workItem from="1639921574232" duration="642000" />
+      <workItem from="1640076825229" duration="2940000" />
+      <workItem from="1640510117114" duration="3478000" />
+      <workItem from="1641908189584" duration="6196000" />
+      <workItem from="1642063216163" duration="1796000" />
+      <workItem from="1642243434276" duration="52000" />
+      <workItem from="1644931951669" duration="1139000" />
+      <workItem from="1644933629945" duration="3481000" />
+      <workItem from="1644938910789" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -511,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639125289729</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add resources deploy scripts">
+      <created>1639137709798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639137709830</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,6 +535,8 @@
     <MESSAGE value="clean" />
     <MESSAGE value="add config server" />
     <MESSAGE value="deploy to kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy to kubernetes" />
+    <MESSAGE value="add resources deploy scripts" />
+    <MESSAGE value="move to java 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to java 17" />
   </component>
 </project>

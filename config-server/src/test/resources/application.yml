@@ -1,5 +1,5 @@
 server:
-  port: 8100
+  port: 8888
 
 eureka:
   client:
@@ -8,11 +8,10 @@ eureka:
     enabled: false
 
 spring:
+  profiles:
+    active: native
   application:
-    name: auth
-  cloud:
-    config:
-      enabled: false
+    name: config-server
 
 webClient:
   loadBalanced:
@@ -21,3 +20,4 @@ webClient:
   default:
     maxConnections: 100
     isKeepAlive: false
+

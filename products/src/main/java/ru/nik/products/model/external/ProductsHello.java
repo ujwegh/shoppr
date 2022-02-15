@@ -1,4 +1,4 @@
-package ru.nik.products.model;
+package ru.nik.products.model.external;
 
 import lombok.Data;
 

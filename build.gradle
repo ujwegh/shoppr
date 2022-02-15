@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.5.2'
+        springBootVersion = '2.5.7'
         springCloudVersion = '2020.0.4'
         lombokVersion = '1.18.6'
         reactorExtraVersion = '3.3.6.RELEASE'
@@ -49,7 +49,7 @@ subprojects {
     apply plugin: 'maven-publish'
 
     group = 'ru.nik'
-    sourceCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
 
     repositories {
         mavenCentral()
