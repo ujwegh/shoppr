@@ -10,7 +10,7 @@ import ru.nik.commons.http.mapper.ObjectJsonMapper;
 
 @Configuration
 public class InvestmentsClientConfig {
-    public static final String SERVICE_NAME = "PRODUCTS";
+    public static final String SERVICE_NAME = "INVESTMENTS";
     public static final String URL_PROP = "investments.service.url";
 
     @Bean
@@ -19,7 +19,7 @@ public class InvestmentsClientConfig {
     }
 
     @Bean
-    public InvestmentsClient otpClient(@Qualifier("investmentsInternalRequestExecutor") InternalRequestExecutor internalRequestExecutor,
+    public InvestmentsClient investmentsClient(@Qualifier("investmentsInternalRequestExecutor") InternalRequestExecutor internalRequestExecutor,
                                        ObjectJsonMapper objectJsonMapper) {
         return new InvestmentsClient(internalRequestExecutor, objectJsonMapper);
     }

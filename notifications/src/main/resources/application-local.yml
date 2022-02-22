@@ -28,4 +28,4 @@ webClient:
 
 products:
   service:
-    url: http://products
+    url: http://investments
