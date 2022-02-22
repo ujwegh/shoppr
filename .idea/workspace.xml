@@ -5,58 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="move to java 17">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/mapper/ProductDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/external/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/internal/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/SomeOtherRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/utils/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/utils/MonoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/test/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/products/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/products-client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/ProductsHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/external/ProductsHello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/starter/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +22,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/config-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/products">
       <ProjectState />
     </projectState>
   </component>
@@ -98,12 +55,51 @@
         <task path="$PROJECT_DIR$/products">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/investments/investments-client">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
+                <item name="investments-client" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
+                <item name="investments-client" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
+                <item name="investments-client" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -156,10 +152,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server/src/test/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2285192" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -190,69 +186,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]">
-    <configuration name="AuthServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.nik.authservice.AuthServiceApplicationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":auth-service:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConfigServerApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.nik.configserver.ConfigServerApplicationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":config-server:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -275,7 +221,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/investments/investments-client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/starter" />
@@ -294,6 +261,32 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy-mongodb.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/startup-scripts/deploy-mongodb.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/startup-scripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy-postgresql.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/startup-scripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -377,6 +370,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InvestmentsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shoppr.investments.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.products.InvestmentsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NotificationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppr.notifications.main" />
       <extension name="net.ashald.envfile">
@@ -417,10 +417,10 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [build]" />
-      <item itemvalue="Gradle.AuthServiceApplicationTests" />
-      <item itemvalue="Gradle.ConfigServerApplicationTests" />
+      <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
+      <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
+      <item itemvalue="Shell Script.deploy-postgresql.sh" />
+      <item itemvalue="Shell Script.deploy-mongodb.sh" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -428,14 +428,15 @@
       <item itemvalue="Spring Boot.ProductsApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication (1)" />
+      <item itemvalue="Spring Boot.InvestmentsApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
+        <item itemvalue="Shell Script.deploy-postgresql.sh" />
+        <item itemvalue="Shell Script.deploy-mongodb.sh" />
         <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [build]" />
-        <item itemvalue="Gradle.ConfigServerApplicationTests" />
-        <item itemvalue="Gradle.AuthServiceApplicationTests" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr:starter [publishToMavenLocal]" />
       </list>
     </recent_temporary>
   </component>
@@ -472,6 +473,11 @@
       <workItem from="1644931951669" duration="1139000" />
       <workItem from="1644933629945" duration="3481000" />
       <workItem from="1644938910789" duration="408000" />
+      <workItem from="1644940415620" duration="2585000" />
+      <workItem from="1644943052563" duration="3054000" />
+      <workItem from="1645255868368" duration="661000" />
+      <workItem from="1645516521057" duration="3237000" />
+      <workItem from="1645546863612" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -527,6 +533,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make starter + InternalRequestExecutor + error mapping" />

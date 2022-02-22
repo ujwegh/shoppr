@@ -38,5 +38,6 @@ helm install \
     --set "name=${DEPLOYMENT_NAME}" \
     -f values-postgresql.yaml \
     bitnami/postgresql
+sleep 500
 
 echo Wait ${DEPLOYMENT_NAME}-${DEPLOYMENT_SUFFIX}-postgresql-0
