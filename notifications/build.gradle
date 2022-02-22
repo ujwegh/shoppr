@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     api("ru.nik:shoppr-starter:$starterVersion")
-    implementation('ru.nik:products-client:1.0')
+    implementation('ru.nik:investments-client:1.0')
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
