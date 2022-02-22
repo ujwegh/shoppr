@@ -37,7 +37,7 @@ bootJar {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifactId 'products-client'
+            artifactId 'investments-client'
             from components.java
         }
     }
