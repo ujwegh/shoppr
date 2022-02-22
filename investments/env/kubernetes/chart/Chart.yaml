@@ -1,0 +1,7 @@
+name: investments
+version: 1.0.0
+description: Investments service.
+home: https://github.com/ujwegh/shoppr/investments
+sources:
+- https://github.com/ujwegh/shoppr/investments
+engine: gotpl

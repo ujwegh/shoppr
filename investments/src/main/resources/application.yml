@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: investments
+  config:
+    import: "configserver:${spring.cloud.config.uri}"
+
+logging:
+  config: ${spring.cloud.config.uri}/investments/default/${spring.cloud.config.label}/logback.groovy
+  pattern:
+    dateformat: "yyyy-MM-dd HH:mm:ss.SSS, Europe/Moscow"
