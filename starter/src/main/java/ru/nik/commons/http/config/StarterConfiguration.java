@@ -1,10 +1,13 @@
 package ru.nik.commons.http.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.micrometer.core.instrument.MeterRegistry;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -21,6 +24,7 @@ import ru.nik.commons.http.internal.InternalRequestExecutors;
 import ru.nik.commons.http.mapper.ObjectJsonMapper;
 import ru.nik.commons.http.mapper.ObjectJsonMapperImpl;
 import ru.nik.commons.retry.RetryProperties;
+import ru.nik.commons.scheduler.ShopprScheduler;
 
 import java.util.concurrent.TimeUnit;
 
@@ -101,4 +105,17 @@ public class StarterConfiguration {
                                                              InternalRequestExecutorErrorResponseMapper internalRequestExecutorErrorResponseMapper) {
         return new InternalRequestExecutors(webClient, retryProperties, internalRequestExecutorErrorResponseMapper);
     }
+
+    @Bean
+    @ConditionalOnMissingBean(name = "shopprScheduler")
+    @ConditionalOnProperty(value = {"scheduler.corePoolSize", "scheduler.maximumPoolSize",
+            "scheduler.keepAliveTimeInSeconds", "scheduler.queueCapacity"})
+    public ShopprScheduler shopprScheduler(@Value("${scheduler.corePoolSize}") int corePoolSize,
+                                           @Value("${scheduler.maximumPoolSize}") int maximumPoolSize,
+                                           @Value("${scheduler.keepAliveTimeInSeconds}") long keepAliveTimeInSeconds,
+                                           @Value("${scheduler.queueCapacity}") int queueCapacity,
+                                           MeterRegistry meterRegistry) {
+        return new ShopprScheduler(corePoolSize, maximumPoolSize, keepAliveTimeInSeconds, queueCapacity, meterRegistry);
+    }
+
 }
