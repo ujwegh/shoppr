@@ -4,17 +4,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
-import ru.nik.ProductsClient;
-import ru.nik.model.ProductsHelloExt;
+import ru.nik.InvestmentsClient;
+import ru.nik.model.InvestmentsHelloExt;
 
 @RestController
 @RequestMapping("/v1/notifications")
 public class MainController {
 
-    private final ProductsClient productsClient;
+    private final InvestmentsClient investmentsClient;
 
-    public MainController(ProductsClient productsClient) {
-        this.productsClient = productsClient;
+    public MainController(InvestmentsClient investmentsClient) {
+        this.investmentsClient = investmentsClient;
     }
 
     @GetMapping("/hello")
@@ -22,9 +22,9 @@ public class MainController {
         return Mono.just("Hello, Notifications!");
     }
 
-    @GetMapping("/products")
-    public Mono<ProductsHelloExt> productsHello() {
-        return productsClient.hello();
+    @GetMapping("/investments")
+    public Mono<InvestmentsHelloExt> productsHello() {
+        return investmentsClient.hello();
     }
 
 }
