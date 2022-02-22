@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="move to java 17">
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="add products module">
+      <change afterPath="$PROJECT_DIR$/products/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/config/ProductsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup-scripts/deploy-postgresql.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +69,9 @@
         <task path="$PROJECT_DIR$/investments/investments-client">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/investments">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -68,38 +82,38 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="investments" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
                 <item name="investments" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="investments" type="2d1252cf:ModuleNode" />
-                <item name="investments-client" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="investments" type="2d1252cf:ModuleNode" />
-                <item name="investments-client" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="investments" type="2d1252cf:ModuleNode" />
-                <item name="investments-client" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
-                <item name="notifications" type="2d1252cf:ModuleNode" />
+                <item name="starter" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="starter" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="starter" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -111,8 +125,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,33 +164,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/products" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.nik.products.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORK\projects\shoppr\products" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\config-server\src\test\resources" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\java\ru\nik\commons\utils" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\startup-scripts" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\notifications\env\kubernetes\chart\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="ru.nik.products.config" />
       <recent name="ru.nik.commons.http.config" />
       <recent name="ru.nik.commons.http.errors" />
       <recent name="ru.nik.commons.webflux" />
-      <recent name="ru.nik.commons.http.logging" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,24 +200,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/investments" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -211,7 +223,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="publishToMavenLocal" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -416,7 +428,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       <item itemvalue="Shell Script.deploy-postgresql.sh" />
@@ -429,14 +440,15 @@
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication (1)" />
       <item itemvalue="Spring Boot.InvestmentsApplication" />
+      <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
         <item itemvalue="Shell Script.deploy-postgresql.sh" />
         <item itemvalue="Shell Script.deploy-mongodb.sh" />
-        <item itemvalue="Gradle.config-server::Users:nalek:Desktop:work:v2:shoppr [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -477,7 +489,8 @@
       <workItem from="1644943052563" duration="3054000" />
       <workItem from="1645255868368" duration="661000" />
       <workItem from="1645516521057" duration="3237000" />
-      <workItem from="1645546863612" duration="1278000" />
+      <workItem from="1645546863612" duration="2900000" />
+      <workItem from="1645549839357" duration="5631000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -528,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639137709830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add products module">
+      <created>1645548182342</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645548182342</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,6 +575,11 @@
     <MESSAGE value="deploy to kubernetes" />
     <MESSAGE value="add resources deploy scripts" />
     <MESSAGE value="move to java 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to java 17" />
+    <MESSAGE value="add products module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add products module" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
