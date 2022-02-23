@@ -1,0 +1,7 @@
+logging:
+  config: investments/config/logback.groovy
+
+spring:
+  cloud:
+    config:
+      enabled: false

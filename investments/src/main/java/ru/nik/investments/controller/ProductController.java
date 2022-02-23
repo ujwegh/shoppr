@@ -9,7 +9,7 @@ import ru.nik.investments.model.internal.Product;
 import ru.nik.investments.service.ProductService;
 
 @RestController
-@RequestMapping(method = RequestMethod.PATCH)
+@RequestMapping("/v1/investments")
 public class ProductController {
 
     private final ProductService productService;

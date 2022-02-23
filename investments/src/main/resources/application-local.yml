@@ -1,5 +1,5 @@
 logging:
-  config: products/config/logback.groovy
+  config: investments/config/logback.groovy
 
 server:
   port: 8101
@@ -11,7 +11,7 @@ eureka:
 
 spring:
   application:
-    name: products
+    name: investments
   cloud:
     config:
       enabled: false
