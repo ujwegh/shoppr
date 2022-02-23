@@ -1,0 +1,47 @@
+buildscript {
+    ext {
+        starterVersion = '1.0'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+group 'ru.nik'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+        mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
+    }
+}
+
+dependencies {
+    api("ru.nik:shoppr-starter:$starterVersion")
+    api("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootJar {
+    enabled = false
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId 'products-client'
+            from components.java
+        }
+    }
+}

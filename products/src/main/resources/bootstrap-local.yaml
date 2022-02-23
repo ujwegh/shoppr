@@ -1,0 +1,7 @@
+logging:
+  config: products/config/logback.groovy
+
+spring:
+  cloud:
+    config:
+      enabled: false

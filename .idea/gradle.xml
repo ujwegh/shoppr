@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/investments/investments-client" />
             <option value="$PROJECT_DIR$/notifications" />
             <option value="$PROJECT_DIR$/products" />
+            <option value="$PROJECT_DIR$/products/products-client" />
             <option value="$PROJECT_DIR$/starter" />
           </set>
         </option>
@@ -41,6 +42,7 @@
             <option value="$PROJECT_DIR$/investments/investments-client" />
             <option value="$PROJECT_DIR$/notifications" />
             <option value="$PROJECT_DIR$/products" />
+            <option value="$PROJECT_DIR$/products/products-client" />
             <option value="$PROJECT_DIR$/starter" />
           </set>
         </option>

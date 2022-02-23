@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="add products REST realization without DB">
-      <change afterPath="$PROJECT_DIR$/products/config/logback.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/resources/META-INF/spring.factories" afterDir="false" />
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="add small logic products service">
+      <change afterPath="$PROJECT_DIR$/products/products-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/ProductsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/config/ProductsClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/model/ProductsHelloExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/bootstrap-local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/products-client.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +99,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="products" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="products" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
+                <item name="products" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shoppr" type="f1a62948:ProjectNode" />
                 <item name="starter" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -153,7 +181,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/products/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/products/products-client" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -165,21 +193,22 @@
       <recent name="ru.nik.products.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORK\projects\shoppr\products\products-client" />
       <recent name="C:\WORK\projects\shoppr\products\src\main\resources" />
       <recent name="C:\WORK\projects\shoppr\products" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\config-server\src\test\resources" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
-      <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\starter\src\main\java\ru\nik\commons\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WORK\projects\shoppr\products\src\main\resources" />
       <recent name="C:\Users\nalek\Desktop\work\v2\shoppr\products" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.nik" />
+      <recent name="ru.nik.config" />
+      <recent name="ru.nik.model" />
       <recent name="" />
       <recent name="ru.nik.products.config" />
-      <recent name="ru.nik.commons.http.config" />
-      <recent name="ru.nik.commons.http.errors" />
-      <recent name="ru.nik.commons.webflux" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,7 +218,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductsApplication (1)">
+  <component name="RunManager" selected="Gradle.products [publishToMavenLocal]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -264,17 +293,25 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="deploy-mongodb.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/startup-scripts/deploy-mongodb.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/startup-scripts" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <envs />
+    <configuration name="products [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/products" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="deploy-postgresql.sh" type="ShConfigurationType" temporary="true">
@@ -437,7 +474,6 @@
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
       <item itemvalue="Shell Script.deploy-postgresql.sh" />
-      <item itemvalue="Shell Script.deploy-mongodb.sh" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -448,14 +484,15 @@
       <item itemvalue="Spring Boot.InvestmentsApplication" />
       <item itemvalue="Spring Boot.ProductsApplication (1)" />
       <item itemvalue="Spring Boot.InvestmentsApplication (1)" />
+      <item itemvalue="Gradle.products [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.products [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
         <item itemvalue="Shell Script.deploy-postgresql.sh" />
-        <item itemvalue="Shell Script.deploy-mongodb.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -497,7 +534,7 @@
       <workItem from="1645255868368" duration="661000" />
       <workItem from="1645516521057" duration="3237000" />
       <workItem from="1645546863612" duration="2900000" />
-      <workItem from="1645549839357" duration="9296000" />
+      <workItem from="1645549839357" duration="12898000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -562,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645555639156</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add small logic products service">
+      <created>1645609356288</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645609356288</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,14 +635,15 @@
     <MESSAGE value="move to java 17" />
     <MESSAGE value="add products module" />
     <MESSAGE value="add products REST realization without DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="add products REST realization without DB" />
+    <MESSAGE value="add small logic products service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add small logic products service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/products/src/main/java/ProductsApplication.java</url>
-          <line>6</line>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

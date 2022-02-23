@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: products
+  zipkin:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/shoppr"
+    username: user
+    password: password
+
+
+server:
+  port: 8103
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+webClient:
+  loadBalanced:
+    acquireTimeout: 100
+    maxConnections: 100
+    isKeepAlive: false
+  default:
+    acquireTimeout: 100
+    maxConnections: 100
+    isKeepAlive: false
+
+investments:
+  service:
+    url: http://investments

@@ -10,6 +10,7 @@
         </processorPath>
         <module name="shoppr.products.main" />
         <module name="shoppr.notifications.main" />
+        <module name="shoppr.products.products-client.main" />
         <module name="shoppr.config-server.main" />
         <module name="shoppr.investments.main" />
         <module name="shoppr.investments.investments-client.main" />
