@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client don't start">
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client don't start (another schema)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/bootstrap-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/bootstrap-local.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,17 +236,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductsApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -566,7 +552,7 @@
       <workItem from="1645255868368" duration="661000" />
       <workItem from="1645516521057" duration="3237000" />
       <workItem from="1645546863612" duration="2900000" />
-      <workItem from="1645549839357" duration="20279000" />
+      <workItem from="1645549839357" duration="21495000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -659,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645616736097</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="products-client don't start (another schema)">
+      <created>1645620351963</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1645620351963</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,7 +684,8 @@
     <MESSAGE value="add small logic products service" />
     <MESSAGE value="add products-client" />
     <MESSAGE value="products-client don't start" />
-    <option name="LAST_COMMIT_MESSAGE" value="products-client don't start" />
+    <MESSAGE value="products-client don't start (another schema)" />
+    <option name="LAST_COMMIT_MESSAGE" value="products-client don't start (another schema)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
