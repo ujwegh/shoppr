@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public Mono<ProductDto> create(ProductDto productDto) {
+    public Mono<ProductDto> create(@RequestBody ProductDto productDto) {
         return productMapper.map(productDto)
                 .flatMap(productService::create)
                 .flatMap(productDtoMapper::map);

@@ -17,6 +17,11 @@ spring:
       enabled: false
   zipkin:
     enabled: false
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: ${spring.application.name}
 
 webClient:
   loadBalanced:
