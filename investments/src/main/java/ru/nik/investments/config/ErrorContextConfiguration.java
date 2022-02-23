@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.reactive.error.ErrorAttributes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.http.codec.ServerCodecConfigurer;
 import ru.nik.commons.http.errors.ErrorInfoErrorAttributes;
 import ru.nik.commons.http.errors.ErrorInfoResolver;
@@ -18,7 +17,6 @@ import java.util.List;
 @Configuration
 public class ErrorContextConfiguration {
     @Bean
-    @Primary
     ErrorInfoErrorAttributes errorAttributes(@Autowired(required = false) List<ExceptionMapper> mappers) {
         return new ErrorInfoErrorAttributes(mappers);
     }
