@@ -1,6 +1,6 @@
-package service;
+package ru.nik.products.service;
 
-import model.Product;
+import ru.nik.products.model.Product;
 
 import java.util.List;
 

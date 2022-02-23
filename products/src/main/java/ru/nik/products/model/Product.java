@@ -1,4 +1,4 @@
-package model;
+package ru.nik.products.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

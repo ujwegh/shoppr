@@ -1,9 +1,9 @@
-package service;
+package ru.nik.products.service;
 
-import model.Product;
+import ru.nik.products.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ProductRepository;
+import ru.nik.products.repository.ProductRepository;
 
 import java.util.List;
 

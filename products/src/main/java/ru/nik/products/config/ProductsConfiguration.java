@@ -1,4 +1,4 @@
-package config;
+package ru.nik.products.config;
 
 
 import org.springframework.context.annotation.Configuration;

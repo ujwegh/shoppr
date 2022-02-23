@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="add products-client">
-      <change afterPath="$PROJECT_DIR$/products/env/build-image.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/templates/svc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/chart/values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/env/kubernetes/deploy.sh" afterDir="false" />
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client don't start">
+      <change afterPath="$PROJECT_DIR$/products/lombok.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/config/ProductsClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/src/main/java/ru/nik/config/ProductsClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/products-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/ProductsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/config/ProductsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ProductsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +241,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductsApplication (1)">
+  <component name="RunManager" selected="Spring Boot.ProductsApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -477,7 +476,7 @@
     </configuration>
     <configuration name="ProductsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppr.products.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ProductsApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.products.ProductsApplication" />
       <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
@@ -500,6 +499,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.products.ProductsApplication" />
       <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -508,6 +508,8 @@
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
+      <item itemvalue="Gradle.products [publishToMavenLocal]" />
+      <item itemvalue="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
@@ -518,15 +520,13 @@
       <item itemvalue="Spring Boot.InvestmentsApplication" />
       <item itemvalue="Spring Boot.ProductsApplication (1)" />
       <item itemvalue="Spring Boot.InvestmentsApplication (1)" />
-      <item itemvalue="Gradle.products [publishToMavenLocal]" />
-      <item itemvalue="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
         <item itemvalue="Gradle.products [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
-        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -569,7 +569,7 @@
       <workItem from="1645255868368" duration="661000" />
       <workItem from="1645516521057" duration="3237000" />
       <workItem from="1645546863612" duration="2900000" />
-      <workItem from="1645549839357" duration="15507000" />
+      <workItem from="1645549839357" duration="16595000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -648,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645613156486</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="products-client don't start">
+      <created>1645615675492</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1645615675492</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +686,8 @@
     <MESSAGE value="add products REST realization without DB" />
     <MESSAGE value="add small logic products service" />
     <MESSAGE value="add products-client" />
-    <option name="LAST_COMMIT_MESSAGE" value="add products-client" />
+    <MESSAGE value="products-client don't start" />
+    <option name="LAST_COMMIT_MESSAGE" value="products-client don't start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

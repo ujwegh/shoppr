@@ -1,6 +1,6 @@
-package repository;
+package ru.nik.products.repository;
 
-import model.Product;
+import ru.nik.products.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //@RepositoryRestResource(collectionResourceRel = "users", path = "users") - проверить при запуске чо это за покемон

@@ -1,13 +1,13 @@
-package controller;
+package ru.nik.products.controller;
 
-import model.Product;
+import ru.nik.products.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.nik.InvestmentsClient;
 import ru.nik.model.InvestmentsHelloExt;
-import service.ProductService;
+import ru.nik.products.service.ProductService;
 
 import java.util.List;
 
