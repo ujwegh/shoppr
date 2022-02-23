@@ -1,4 +1,4 @@
-package ru.nik.products.model.internal;
+package ru.nik.investments.model.internal;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

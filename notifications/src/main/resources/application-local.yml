@@ -26,6 +26,6 @@ webClient:
     maxConnections: 100
     isKeepAlive: false
 
-products:
+investments:
   service:
     url: http://investments

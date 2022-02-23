@@ -9,10 +9,12 @@ eureka:
 
 spring:
   application:
-    name: products
+    name: notifications
   cloud:
     config:
       enabled: false
+  zipkin:
+    enabled: false
 
 webClient:
   loadBalanced:
@@ -22,6 +24,6 @@ webClient:
     maxConnections: 100
     isKeepAlive: false
 
-products:
+investments:
   service:
     url: http://investments

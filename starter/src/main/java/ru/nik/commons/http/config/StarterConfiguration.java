@@ -108,8 +108,11 @@ public class StarterConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(name = "shopprScheduler")
-    @ConditionalOnProperty(value = {"scheduler.corePoolSize", "scheduler.maximumPoolSize",
-            "scheduler.keepAliveTimeInSeconds", "scheduler.queueCapacity"})
+    @ConditionalOnProperty(value = {
+            "scheduler.corePoolSize",
+            "scheduler.maximumPoolSize",
+            "scheduler.keepAliveTimeInSeconds",
+            "scheduler.queueCapacity"})
     public ShopprScheduler shopprScheduler(@Value("${scheduler.corePoolSize}") int corePoolSize,
                                            @Value("${scheduler.maximumPoolSize}") int maximumPoolSize,
                                            @Value("${scheduler.keepAliveTimeInSeconds}") long keepAliveTimeInSeconds,

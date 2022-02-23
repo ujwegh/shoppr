@@ -13,6 +13,8 @@ spring:
   cloud:
     config:
       enabled: false
+  zipkin:
+    enabled: false
 
 webClient:
   loadBalanced:

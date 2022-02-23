@@ -1,4 +1,4 @@
-package ru.nik.products.model.external;
+package ru.nik.investments.model.external;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

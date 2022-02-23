@@ -7,7 +7,7 @@ buildscript {
         resilience4j = '1.7.0'
         guava = '27.0-jre'
         commons_lang = '2.6'
-        log4j = '1.2.17'
+        log4j = '2.17.0'
         jupiter = '5.6.0'
     }
 }
@@ -25,7 +25,9 @@ dependencyManagement {
         mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
     }
 }
-
+bootJar {
+    enabled = false
+}
 
 java {
     withSourcesJar()
@@ -63,7 +65,7 @@ dependencies {
     api("de.siegmar:logback-gelf:${logbackGelfVersion}")
     api("org.codehaus.groovy:groovy-all:${groovyVersion}")
     api("org.springframework.cloud:spring-cloud-starter-sleuth")
-    api("log4j:log4j:${log4j}")
+    api("org.apache.logging.log4j:log4j:${log4j}")
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiter}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

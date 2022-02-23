@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 
 public class ShopprScheduler implements Scheduler, Executor {
     private final Scheduler scheduler;
-    private final String EXECUTOR_NAME = "ShopprScheduler";
+    private static final String EXECUTOR_NAME = "shopprScheduler";
 
     public ShopprScheduler(int corePoolSize,
                            int maximumPoolSize,

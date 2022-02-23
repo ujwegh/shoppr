@@ -1,12 +1,12 @@
-package ru.nik.products.controller;
+package ru.nik.investments.controller;
 
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 import ru.nik.commons.utils.MonoMapper;
-import ru.nik.products.model.external.ProductDto;
-import ru.nik.products.model.external.ProductsHello;
-import ru.nik.products.model.internal.Product;
-import ru.nik.products.service.ProductService;
+import ru.nik.investments.model.external.ProductDto;
+import ru.nik.investments.model.external.ProductsHello;
+import ru.nik.investments.model.internal.Product;
+import ru.nik.investments.service.ProductService;
 
 @RestController
 @RequestMapping(method = RequestMethod.PATCH)

@@ -1,13 +1,13 @@
-package ru.nik.products.service;
+package ru.nik.investments.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import ru.nik.products.model.internal.Product;
-import ru.nik.products.repository.InvestmentsRepository;
-import ru.nik.products.repository.SomeOtherRepo;
+import ru.nik.investments.model.internal.Product;
+import ru.nik.investments.repository.InvestmentsRepository;
+import ru.nik.investments.repository.SomeOtherRepo;
 
 @Service
 public class ProductServiceImpl implements ProductService {

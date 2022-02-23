@@ -1,4 +1,4 @@
-package ru.nik.products.exceptions;
+package ru.nik.investments.exceptions;
 
 import org.springframework.http.HttpStatus;
 import ru.nik.commons.http.errors.ResponseCodeError;

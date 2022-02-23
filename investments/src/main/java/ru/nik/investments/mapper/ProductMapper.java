@@ -1,10 +1,10 @@
-package ru.nik.products.mapper;
+package ru.nik.investments.mapper;
 
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 import ru.nik.commons.utils.MonoMapper;
-import ru.nik.products.model.external.ProductDto;
-import ru.nik.products.model.internal.Product;
+import ru.nik.investments.model.external.ProductDto;
+import ru.nik.investments.model.internal.Product;
 
 import java.math.BigDecimal;
 

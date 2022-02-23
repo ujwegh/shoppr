@@ -1,4 +1,4 @@
-package ru.nik.products;
+package ru.nik.investments;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
