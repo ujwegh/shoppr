@@ -12,7 +12,6 @@ spring:
     username: user
     password: password
 
-
 server:
   port: 8103
 

@@ -14,12 +14,12 @@ public class ProductsClientConfig {
     public static final String URL_PROP = "products.service.url";
 
     @Bean
-    public InternalRequestExecutor investmentsInternalRequestExecutor(InternalRequestExecutors internalRequestExecutors) {
+    public InternalRequestExecutor productsInternalRequestExecutor(InternalRequestExecutors internalRequestExecutors) {
         return internalRequestExecutors.get(SERVICE_NAME, URL_PROP);
     }
 
     @Bean
-    public ProductsClient investmentsClient(@Qualifier("productsInternalRequestExecutor") InternalRequestExecutor internalRequestExecutor,
+    public ProductsClient productsClient(@Qualifier("productsInternalRequestExecutor") InternalRequestExecutor internalRequestExecutor,
                                        ObjectJsonMapper objectJsonMapper) {
         return new ProductsClient(internalRequestExecutor, objectJsonMapper);
     }

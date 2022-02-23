@@ -1,0 +1,15 @@
+name: "products"
+
+image: "products"
+imageTag:
+imagePullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+spring:
+  cloud:
+    config:
+      uri: "http://config-server:8888"
+
