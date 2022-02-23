@@ -120,5 +120,4 @@ public class StarterConfiguration {
                                            MeterRegistry meterRegistry) {
         return new ShopprScheduler(corePoolSize, maximumPoolSize, keepAliveTimeInSeconds, queueCapacity, meterRegistry);
     }
-
 }
