@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '2.5.7'
-        springCloudVersion = '2020.0.4'
+        springCloudVersion = '2020.0.5'
         lombokVersion = '1.18.22'
         reactorExtraVersion = '3.3.6.RELEASE'
         reactorKafkaVersion = '1.2.5.RELEASE'
