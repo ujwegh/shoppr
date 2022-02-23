@@ -25,6 +25,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation('ru.nik:investments-client:1.0')
     testImplementation 'io.projectreactor:reactor-test'
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+
 }
 
 dependencyManagement {

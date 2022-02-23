@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client don't start">
-      <change afterPath="$PROJECT_DIR$/products/lombok.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/products-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/products-client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/ProductsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/config/ProductsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ProductsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/bootstrap-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/bootstrap-local.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +186,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mongo" />
+    <property name="DatabaseDriversLRU" value="mongo&#10;postgresql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -209,6 +203,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -524,8 +521,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]" />
-        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
         <item itemvalue="Gradle.products [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       </list>
@@ -569,7 +566,7 @@
       <workItem from="1645255868368" duration="661000" />
       <workItem from="1645516521057" duration="3237000" />
       <workItem from="1645546863612" duration="2900000" />
-      <workItem from="1645549839357" duration="16595000" />
+      <workItem from="1645549839357" duration="20279000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -655,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645615675492</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="products-client don't start">
+      <created>1645616736097</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1645616736097</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,6 +700,11 @@
           <url>file://$PROJECT_DIR$/notifications/src/main/java/ru/nik/notifications/NotificationsApplication.java</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/products/src/main/java/ru/nik/products/ProductsApplication.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

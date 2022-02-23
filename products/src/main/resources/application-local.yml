@@ -8,9 +8,12 @@ spring:
       ddl-auto: create
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: "jdbc:postgresql://localhost:5432/shoppr"
-    username: user
-    password: password
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    username: postgres
+    password: mysecretpassword
 
 server:
   port: 8103

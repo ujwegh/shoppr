@@ -2,6 +2,8 @@ logging:
   config: products/config/logback.groovy
 
 spring:
+  application:
+    name: products
   cloud:
     config:
       enabled: false
