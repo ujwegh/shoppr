@@ -12,7 +12,7 @@ public class ThreadLocalContextWrapper {
 
     private final Scheduler scheduler;
 
-    public ThreadLocalContextWrapper(@Qualifier("ShopprScheduler") Scheduler scheduler) {
+    public ThreadLocalContextWrapper(@Qualifier("shopprScheduler") Scheduler scheduler) {
         this.scheduler = scheduler;
     }
 
