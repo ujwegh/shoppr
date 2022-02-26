@@ -5,6 +5,7 @@ import io.micrometer.core.instrument.MeterRegistry;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -17,8 +18,10 @@ import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.util.unit.DataSize;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.scheduler.Scheduler;
 import reactor.netty.http.client.HttpClient;
 import reactor.netty.resources.ConnectionProvider;
+import ru.nik.commons.http.context.threadlocal.ThreadLocalContextWrapper;
 import ru.nik.commons.http.internal.InternalRequestExecutorErrorResponseMapper;
 import ru.nik.commons.http.internal.InternalRequestExecutors;
 import ru.nik.commons.http.mapper.ObjectJsonMapper;
@@ -119,5 +122,11 @@ public class StarterConfiguration {
                                            @Value("${scheduler.queueCapacity}") int queueCapacity,
                                            MeterRegistry meterRegistry) {
         return new ShopprScheduler(corePoolSize, maximumPoolSize, keepAliveTimeInSeconds, queueCapacity, meterRegistry);
+    }
+
+    @Bean
+    @ConditionalOnMissingBean(ThreadLocalContextWrapper.class)
+    public ThreadLocalContextWrapper threadLocalContextWrapper(@Qualifier("shopprScheduler") Scheduler scheduler) {
+        return new ThreadLocalContextWrapper(scheduler);
     }
 }
