@@ -1,6 +1,3 @@
-logging:
-  config: auth-service/config/logback.groovy
-
 server:
   port: 8100
 
@@ -12,9 +9,8 @@ eureka:
 spring:
   application:
     name: auth
-  cloud:
-    config:
-      enabled: false
+  zipkin:
+    enabled: false
 
 webClient:
   loadBalanced:

@@ -23,6 +23,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
+    implementation group: 'io.projectreactor.addons', name: 'reactor-extra', version: '3.4.6'
+
 }
 
 dependencyManagement {

@@ -1,10 +1,9 @@
 spring:
   application:
     name: auth
-  cloud:
-    config:
-      uri: http://localhost:8888
-      label: default
+  config:
+    uri: http://localhost:8888
+    label: default
 
 logging:
   config: ${spring.cloud.config.uri}/auth/default/${spring.cloud.config.label}/logback.groovy

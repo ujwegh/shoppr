@@ -1,0 +1,7 @@
+logging:
+  config: auth-service/config/logback.groovy
+
+spring:
+  cloud:
+    config:
+      enabled: false
