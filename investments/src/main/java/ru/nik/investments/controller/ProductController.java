@@ -2,6 +2,7 @@ package ru.nik.investments.controller;
 
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
+import ru.nik.commons.http.context.threadlocal.ThreadLocalContextWrapper;
 import ru.nik.commons.utils.MonoMapper;
 import ru.nik.investments.model.external.ProductDto;
 import ru.nik.investments.model.external.ProductsHello;
@@ -15,10 +16,13 @@ public class ProductController {
     private final ProductService productService;
     private final MonoMapper<Product, ProductDto> productDtoMapper;
     private final MonoMapper<ProductDto, Product> productMapper;
+    private final ThreadLocalContextWrapper threadLocalContextWrapper;
 
-    public ProductController(ProductService productService,
+    public ProductController(ThreadLocalContextWrapper threadLocalContextWrapper,
+                             ProductService productService,
                              MonoMapper<Product, ProductDto> productDtoMapper,
                              MonoMapper<ProductDto, Product> productMapper) {
+        this.threadLocalContextWrapper = threadLocalContextWrapper;
         this.productService = productService;
         this.productDtoMapper = productDtoMapper;
         this.productMapper = productMapper;
@@ -27,7 +31,7 @@ public class ProductController {
     @GetMapping("/hello")
     public Mono<ProductsHello> hello() {
         ProductsHello productsHello = new ProductsHello();
-        productsHello.setValue("Hello, Products!");
+        productsHello.setValue("Hello, Investments!");
         return Mono.just(productsHello);
 //        return Mono.error(new ResponseCodeException(new ExampleErrorException(), "something has been broken"));
     }
@@ -41,10 +45,8 @@ public class ProductController {
 
     @GetMapping("/{uuid}")
     public Mono<ProductDto> findByUuid(@PathVariable("uuid") @RequestBody String uuid) {
-        return productService.findByUuid(uuid)
-                .flatMap(productDtoMapper::map);
+        return productService.findByUuid(uuid).flatMap(productDtoMapper::map);
     }
-
 
 
 }

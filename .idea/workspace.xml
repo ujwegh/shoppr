@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client don't start (another schema)">
+    <list default="true" id="b0a62ad7-a454-435d-8ad1-fc6bd5336d27" name="Default Changelist" comment="products-client small fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/products/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/investments/src/main/java/ru/nik/investments/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/investments/src/main/java/ru/nik/investments/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/investments/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/investments/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ProductsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/ru/nik/products/config/ProductsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/context/threadlocal/ThreadLocalContextWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/main/java/ru/nik/commons/http/context/threadlocal/ThreadLocalContextWrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +239,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductsApplication">
+  <component name="RunManager" selected="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -398,7 +415,9 @@
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.discoveryservice.DiscoveryServiceApplication" />
+      <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -427,6 +446,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.nik.investments.InvestmentsApplication" />
       <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -507,9 +527,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:products:products-client [publishToMavenLocal]" />
+        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
         <item itemvalue="Gradle.products [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:starter [publishToMavenLocal]" />
-        <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments [publishToMavenLocal]" />
         <item itemvalue="Gradle.config-server::WORK:projects:shoppr:investments:investments-client [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -553,6 +573,7 @@
       <workItem from="1645516521057" duration="3237000" />
       <workItem from="1645546863612" duration="2900000" />
       <workItem from="1645549839357" duration="21495000" />
+      <workItem from="1645621784877" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="make starter + InternalRequestExecutor + error mapping">
       <created>1637423435825</created>
@@ -652,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645620351963</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="products-client small fix">
+      <created>1645622017215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1645622017215</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +713,8 @@
     <MESSAGE value="add products-client" />
     <MESSAGE value="products-client don't start" />
     <MESSAGE value="products-client don't start (another schema)" />
-    <option name="LAST_COMMIT_MESSAGE" value="products-client don't start (another schema)" />
+    <MESSAGE value="products-client small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="products-client small fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -32,3 +32,10 @@ webClient:
     acquireTimeout: 100
     maxConnections: 100
     isKeepAlive: false
+
+
+scheduler:
+  corePoolSize: 10
+  maximumPoolSize: 1000
+  keepAliveTimeInSeconds: 60
+  queueCapacity: 10000
