@@ -9,7 +9,7 @@ eureka:
 
 spring:
   application:
-    name: products
+    name: investments
   cloud:
     config:
       enabled: false

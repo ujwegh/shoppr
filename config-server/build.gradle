@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        starterVersion = '1.0'
+        starterVersion = '1.1'
     }
 }
 

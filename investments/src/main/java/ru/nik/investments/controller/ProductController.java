@@ -16,13 +16,10 @@ public class ProductController {
     private final ProductService productService;
     private final MonoMapper<Product, ProductDto> productDtoMapper;
     private final MonoMapper<ProductDto, Product> productMapper;
-    private final ThreadLocalContextWrapper threadLocalContextWrapper;
 
-    public ProductController(ThreadLocalContextWrapper threadLocalContextWrapper,
-                             ProductService productService,
+    public ProductController(ProductService productService,
                              MonoMapper<Product, ProductDto> productDtoMapper,
                              MonoMapper<ProductDto, Product> productMapper) {
-        this.threadLocalContextWrapper = threadLocalContextWrapper;
         this.productService = productService;
         this.productDtoMapper = productDtoMapper;
         this.productMapper = productMapper;
