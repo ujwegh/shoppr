@@ -1,0 +1,13 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfigurationdatasource:
+  cloud:
+    config:
+      enabled: false
+  url: "jdbc:postgresql://localhost:5432/postgres"
+  username: postgres
+  password: mysecretpassword
+
+eureka:
+  client:
+    enabled: false
