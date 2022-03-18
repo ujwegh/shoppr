@@ -4,13 +4,13 @@
 
 CREATE SCHEMA ${auth.schemaName};
 
-CREATE TABLE ${auth.schemaName}.registered_user
+CREATE TABLE ${auth.schemaName}.users
 (
-    userId    serial PRIMARY KEY,
+    user_id    serial PRIMARY KEY,
     email     varchar(24) NOT NULL,
     salt      varchar(24) NOT NULL, -- 16 bytes base64
     hash      varchar(44) NOT NULL, -- 32 bytes base64
-    secretKey varchar(32) NOT NULL
+    secret_key varchar(32) NOT NULL
 );
 
-CREATE UNIQUE INDEX reg_user_email_uidx ON ${auth.schemaName}.registered_user (email);
+CREATE UNIQUE INDEX reg_user_email_uidx ON ${auth.schemaName}.users (email);

@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table
+@Table("users")
 public class User {
 
     @Id

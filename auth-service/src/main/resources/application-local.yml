@@ -12,7 +12,7 @@ spring:
   zipkin:
     enabled: false
   r2dbc:
-    url: "r2dbc:postgresql://localhost:5432/postgres"
+    url: "r2dbc:postgresql://localhost:5432/postgres?currentSchema=obauth"
     username: postgres
     password: mysecretpassword
   liquibase:
