@@ -11,6 +11,13 @@ spring:
     name: auth
   zipkin:
     enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: mysecretpassword
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
 
 webClient:
   loadBalanced:
@@ -19,3 +26,4 @@ webClient:
   default:
     maxConnections: 100
     isKeepAlive: false
+

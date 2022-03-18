@@ -23,6 +23,10 @@ dependencies {
     implementation group: 'com.nimbusds', name: 'nimbus-jose-jwt', version: '9.21'
     implementation group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+
+    // https://mvnrepository.com/artifact/io.r2dbc/r2dbc-postgresql
+    implementation group: 'io.r2dbc', name: 'r2dbc-postgresql', version: '0.8.10.RELEASE'
+
 }
 
 dependencyManagement {
