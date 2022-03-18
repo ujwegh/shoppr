@@ -5,16 +5,16 @@ buildscript {
     }
 }
 
+plugins {
+    id 'org.liquibase.gradle' version '2.0.1'
+}
+
 version = '0.0.1-SNAPSHOT'
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
-}
-
-plugins {
-    id 'org.liquibase.gradle' version '2.0.1'
 }
 
 dependencies {

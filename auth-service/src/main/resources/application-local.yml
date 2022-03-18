@@ -11,15 +11,15 @@ spring:
     name: auth
   zipkin:
     enabled: false
-  datasource:
-    url: "jdbc:postgresql://localhost:5432/postgres"
+  r2dbc:
+    url: "r2dbc:postgresql://localhost:5432/postgres"
     username: postgres
     password: mysecretpassword
   liquibase:
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
     change-log: /liquibase/changelog.xml
-    url: ${spring.datasource.url}
+    url: ${spring.r2dbc.url}
     database-change-log-table: auth_databaseChangeLog
     database-change-log-lock-table: auth_databaseChangeLogLock
     parameters:
