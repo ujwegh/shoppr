@@ -16,7 +16,7 @@ spring:
     username: postgres
     password: mysecretpassword
   liquibase:
-    change-log: classpath:db/changelog/db.changelog-master.xml
+    change-log: classpath:liquibase/changelog/db.changelog-master.xml
 
 
 webClient:

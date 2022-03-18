@@ -1,6 +1,7 @@
 buildscript {
     ext {
         starterVersion = '1.1'
+        liquibaseVersion = '4.0.0'
     }
 }
 
@@ -12,8 +13,13 @@ configurations {
     }
 }
 
+plugins {
+    id 'org.liquibase.gradle' version '2.0.1'
+}
+
 dependencies {
     api("ru.nik:shoppr-starter:$starterVersion")
+    api("org.liquibase:liquibase-core:$liquibaseVersion")
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -26,6 +32,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.r2dbc/r2dbc-postgresql
     implementation group: 'io.r2dbc', name: 'r2dbc-postgresql', version: '0.8.10.RELEASE'
+
 
 }
 
