@@ -19,7 +19,7 @@ spring:
     user: ${spring.r2dbc.username}
     password: ${spring.r2dbc.password}
     change-log: /liquibase/changelog.xml
-    url: ${spring.r2dbc.url}
+    url: "jdbc:postgresql://localhost:5432/postgres"
     database-change-log-table: auth_databaseChangeLog
     database-change-log-lock-table: auth_databaseChangeLogLock
     parameters:
