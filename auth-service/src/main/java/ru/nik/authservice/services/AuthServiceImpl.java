@@ -36,10 +36,10 @@ public class AuthServiceImpl implements AuthService {
                 .flatMap(user -> {
                     if (user.getUserId() == null) {
                         return repository.save(user)
-                                .flatMap(result2 -> {
-                                    String userId = result2.getUserId();
+                                .flatMap(savedUser -> {
+                                    String userId = savedUser.getUserId();
                                     String token = tokenManager.issueToken(userId);
-                                    SignupResponse signupResponse = new SignupResponse(userId, token, secret);
+                                    SignupResponse signupResponse = new SignupResponse(userId, token, savedUser.getSecretKey());
                                     return Mono.just(signupResponse);
                                 });
                     } else {
@@ -62,35 +62,27 @@ public class AuthServiceImpl implements AuthService {
         String email = request.getEmail().trim().toLowerCase();
         String password = request.getPassword();
         String code = request.getCode();
-        Mono<LoginResponse> response = repository.findByEmail(email)
-                .defaultIfEmpty(new User())
+        return repository.findByEmail(email)
                 .flatMap(user -> {
-                    if (user.getUserId() == null) {
-                        // no user
-                        return Mono.empty();
-                    } else {
-                        // user exists
-                        String salt = user.getSalt();
-                        String secret = user.getSecretKey();
-                        boolean passwordMatch = BCrypt.hashpw(password, salt).equalsIgnoreCase(user.getHash());
-                        if (passwordMatch) {
-                            // password matched
-                            boolean codeMatched = totpManager.validateCode(code, secret);
-                            if (codeMatched) {
-                                String token = tokenManager.issueToken(user.getUserId());
-                                LoginResponse loginResponse = new LoginResponse();
-                                loginResponse.setToken(token);
-                                loginResponse.setUserId(user.getUserId());
-                                return Mono.just(loginResponse);
-                            } else {
-                                return Mono.error(new LoginDeniedException());
-                            }
+                    String salt = user.getSalt();
+                    String secret = user.getSecretKey();
+                    boolean passwordMatch = BCrypt.hashpw(password, salt).equalsIgnoreCase(user.getHash());
+                    if (passwordMatch) {
+                        // password matched
+                        boolean codeMatched = totpManager.validateCode(code, secret);
+                        if (codeMatched) {
+                            String token = tokenManager.issueToken(user.getUserId());
+                            LoginResponse loginResponse = new LoginResponse();
+                            loginResponse.setToken(token);
+                            loginResponse.setUserId(user.getUserId());
+                            return Mono.just(loginResponse);
                         } else {
                             return Mono.error(new LoginDeniedException());
                         }
+                    } else {
+                        return Mono.error(new LoginDeniedException());
                     }
                 });
-        return response;
     }
 
     @Override
