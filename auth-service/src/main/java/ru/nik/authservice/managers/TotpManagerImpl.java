@@ -10,8 +10,8 @@ import dev.samstevens.totp.time.SystemTimeProvider;
 import dev.samstevens.totp.time.TimeProvider;
 import org.springframework.stereotype.Component;
 
-@Component("TotpManager")
-public class TotpManagerImpl implements tech.mednikov.webflux2fademo.managers.TotpManager {
+@Component
+public class TotpManagerImpl implements TotpManager {
     @Override
     public String generateSecret() {
         SecretGenerator generator = new DefaultSecretGenerator();

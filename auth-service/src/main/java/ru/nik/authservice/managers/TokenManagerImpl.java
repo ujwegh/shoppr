@@ -12,15 +12,15 @@ import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
-import tech.mednikov.webflux2fademo.errors.InvalidTokenException;
+import ru.nik.authservice.errors.InvalidTokenException;
 
 import java.security.interfaces.RSAPublicKey;
 import java.util.UUID;
 
-@Component("TokenManager")
+@Component
 public class TokenManagerImpl implements TokenManager{
 
-    private RSAKey key;
+    private final RSAKey key;
 
     public TokenManagerImpl() throws Exception{
         key =  new RSAKeyGenerator(2048).keyID(UUID.randomUUID().toString()).generate();
@@ -33,8 +33,7 @@ public class TokenManagerImpl implements TokenManager{
             JWTClaimsSet cs = new JWTClaimsSet.Builder().subject(userId).build();
             SignedJWT signedJWT = new SignedJWT(new JWSHeader.Builder(JWSAlgorithm.RS256).keyID(key.getKeyID()).build(), cs);
             signedJWT.sign(signer);
-            String token = signedJWT.serialize();
-            return token;
+            return signedJWT.serialize();
 
         } catch (Exception ex){
 

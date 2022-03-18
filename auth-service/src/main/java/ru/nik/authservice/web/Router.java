@@ -26,6 +26,6 @@ public class Router {
                                                              AuthFunction authFunction){
         return RouterFunctions
                 .route(GET("/secured/hello").and(accept(json)), handler::sayHello)
-                .filter(authFunction::filter);
+                .filter(authFunction);
     }
 }

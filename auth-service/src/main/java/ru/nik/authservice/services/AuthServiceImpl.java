@@ -1,6 +1,5 @@
 package ru.nik.authservice.services;
 
-import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
@@ -12,13 +11,18 @@ import ru.nik.authservice.model.*;
 import ru.nik.authservice.repositories.UserRepository;
 
 
-@Component("AuthService")
-@AllArgsConstructor
+@Component
 public class AuthServiceImpl implements AuthService {
 
-    private TokenManager tokenManager;
-    private TotpManager totpManager;
-    private UserRepository repository;
+    private final TokenManager tokenManager;
+    private final TotpManager totpManager;
+    private final UserRepository repository;
+
+    public AuthServiceImpl(TokenManager tokenManager, TotpManager totpManager, UserRepository repository) {
+        this.tokenManager = tokenManager;
+        this.totpManager = totpManager;
+        this.repository = repository;
+    }
 
     @Override
     public Mono<SignupResponse> signup(SignupRequest request) {
@@ -34,12 +38,13 @@ public class AuthServiceImpl implements AuthService {
                 .defaultIfEmpty(user)
                 .flatMap(result -> {
                     if (result.getUserId() == null) {
-                        return repository.save(result).flatMap(result2 -> {
-                            String userId = result2.getUserId();
-                            String token = tokenManager.issueToken(userId);
-                            SignupResponse signupResponse = new SignupResponse(userId, token, secret);
-                            return Mono.just(signupResponse);
-                        });
+                        return repository.save(result)
+                                .flatMap(result2 -> {
+                                    String userId = result2.getUserId();
+                                    String token = tokenManager.issueToken(userId);
+                                    SignupResponse signupResponse = new SignupResponse(userId, token, secret);
+                                    return Mono.just(signupResponse);
+                                });
                     } else {
                         return Mono.error(new AlreadyExistsException());
                     }

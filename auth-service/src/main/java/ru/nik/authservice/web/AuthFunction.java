@@ -12,7 +12,7 @@ import ru.nik.authservice.services.AuthService;
 import java.util.List;
 
 @AllArgsConstructor
-@Component("AuthFunction")
+@Component
 class AuthFunction implements HandlerFilterFunction<ServerResponse, ServerResponse> {
 
     private AuthService authService;
