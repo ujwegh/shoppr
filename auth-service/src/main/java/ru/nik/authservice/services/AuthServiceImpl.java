@@ -7,7 +7,11 @@ import ru.nik.authservice.errors.AlreadyExistsException;
 import ru.nik.authservice.errors.LoginDeniedException;
 import ru.nik.authservice.managers.TokenManager;
 import ru.nik.authservice.managers.TotpManager;
-import ru.nik.authservice.model.*;
+import ru.nik.authservice.model.external.LoginRequest;
+import ru.nik.authservice.model.external.LoginResponse;
+import ru.nik.authservice.model.external.SignupRequest;
+import ru.nik.authservice.model.external.SignupResponse;
+import ru.nik.authservice.model.internal.User;
 import ru.nik.authservice.repositories.UserRepository;
 
 
@@ -26,19 +30,12 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public Mono<SignupResponse> signup(SignupRequest request) {
-
         String email = request.getEmail().trim().toLowerCase();
-        String password = request.getPassword();
-        String salt = BCrypt.gensalt();
-        String hash = BCrypt.hashpw(password, salt);
-        String secret = totpManager.generateSecret();
-        User user = new User(null, email, hash, salt, secret);
-
-        Mono<SignupResponse> response = repository.findByEmail(email)
-                .defaultIfEmpty(user)
-                .flatMap(result -> {
-                    if (result.getUserId() == null) {
-                        return repository.save(result)
+        return repository.findByEmail(email)
+                .defaultIfEmpty(createNewUser(request))
+                .flatMap(user -> {
+                    if (user.getUserId() == null) {
+                        return repository.save(user)
                                 .flatMap(result2 -> {
                                     String userId = result2.getUserId();
                                     String token = tokenManager.issueToken(userId);
@@ -49,7 +46,15 @@ public class AuthServiceImpl implements AuthService {
                         return Mono.error(new AlreadyExistsException());
                     }
                 });
-        return response;
+    }
+
+    private User createNewUser(SignupRequest request) {
+        String email = request.getEmail().trim().toLowerCase();
+        String password = request.getPassword();
+        String salt = BCrypt.gensalt();
+        String hash = BCrypt.hashpw(password, salt);
+        String secret = totpManager.generateSecret();
+        return new User(null, email, hash, salt, secret);
     }
 
     @Override

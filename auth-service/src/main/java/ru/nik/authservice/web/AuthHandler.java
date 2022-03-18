@@ -7,10 +7,10 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 import ru.nik.authservice.errors.LoginDeniedException;
-import ru.nik.authservice.model.LoginRequest;
-import ru.nik.authservice.model.LoginResponse;
-import ru.nik.authservice.model.SignupRequest;
-import ru.nik.authservice.model.SignupResponse;
+import ru.nik.authservice.model.external.LoginRequest;
+import ru.nik.authservice.model.external.LoginResponse;
+import ru.nik.authservice.model.external.SignupRequest;
+import ru.nik.authservice.model.external.SignupResponse;
 import ru.nik.authservice.services.AuthService;
 
 @Component

@@ -1,7 +1,7 @@
 package ru.nik.authservice.repositories;
 
 import reactor.core.publisher.Mono;
-import ru.nik.authservice.model.User;
+import ru.nik.authservice.model.internal.User;
 
 public interface UserRepository extends ReactiveMongoRepository<User, String> {
 

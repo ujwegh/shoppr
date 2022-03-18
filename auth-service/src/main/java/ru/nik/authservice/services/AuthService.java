@@ -1,10 +1,10 @@
 package ru.nik.authservice.services;
 
 import reactor.core.publisher.Mono;
-import ru.nik.authservice.model.LoginRequest;
-import ru.nik.authservice.model.LoginResponse;
-import ru.nik.authservice.model.SignupRequest;
-import ru.nik.authservice.model.SignupResponse;
+import ru.nik.authservice.model.external.LoginRequest;
+import ru.nik.authservice.model.external.LoginResponse;
+import ru.nik.authservice.model.external.SignupRequest;
+import ru.nik.authservice.model.external.SignupResponse;
 
 public interface AuthService {
 

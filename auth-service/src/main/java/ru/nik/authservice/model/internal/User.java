@@ -1,4 +1,4 @@
-package ru.nik.authservice.model;
+package ru.nik.authservice.model.internal;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

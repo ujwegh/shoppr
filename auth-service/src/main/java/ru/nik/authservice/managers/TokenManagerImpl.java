@@ -10,6 +10,7 @@ import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.gen.RSAKeyGenerator;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 import ru.nik.authservice.errors.InvalidTokenException;
@@ -17,13 +18,16 @@ import ru.nik.authservice.errors.InvalidTokenException;
 import java.security.interfaces.RSAPublicKey;
 import java.util.UUID;
 
+@Slf4j
 @Component
 public class TokenManagerImpl implements TokenManager{
 
     private final RSAKey key;
 
     public TokenManagerImpl() throws Exception{
-        key =  new RSAKeyGenerator(2048).keyID(UUID.randomUUID().toString()).generate();
+        key =  new RSAKeyGenerator(2048)
+                .keyID(UUID.randomUUID().toString())
+                .generate();
     }
 
     @Override
@@ -36,9 +40,8 @@ public class TokenManagerImpl implements TokenManager{
             return signedJWT.serialize();
 
         } catch (Exception ex){
-
+            log.warn("Failed to issue token", ex);
             return null;
-
         }
     }
 
