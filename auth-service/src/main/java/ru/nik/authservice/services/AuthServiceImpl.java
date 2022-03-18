@@ -77,10 +77,10 @@ public class AuthServiceImpl implements AuthService {
                             loginResponse.setUserId(user.getUserId());
                             return Mono.just(loginResponse);
                         } else {
-                            return Mono.error(new LoginDeniedException());
+                            return Mono.error(new LoginDeniedException("Code match failed"));
                         }
                     } else {
-                        return Mono.error(new LoginDeniedException());
+                        return Mono.error(new LoginDeniedException("Password match failed"));
                     }
                 });
     }
