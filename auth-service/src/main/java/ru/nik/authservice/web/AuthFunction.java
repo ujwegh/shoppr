@@ -1,6 +1,5 @@
 package ru.nik.authservice.web;
 
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.HandlerFilterFunction;
 import org.springframework.web.reactive.function.server.HandlerFunction;
@@ -11,11 +10,14 @@ import ru.nik.authservice.services.AuthService;
 
 import java.util.List;
 
-@AllArgsConstructor
 @Component
 class AuthFunction implements HandlerFilterFunction<ServerResponse, ServerResponse> {
 
-    private AuthService authService;
+    private final AuthService authService;
+
+    AuthFunction(AuthService authService) {
+        this.authService = authService;
+    }
 
     @Override
     public Mono<ServerResponse> filter(ServerRequest request,
