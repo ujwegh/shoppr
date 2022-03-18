@@ -12,11 +12,15 @@ spring:
   zipkin:
     enabled: false
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: "jdbc:postgresql://localhost:5432/postgres"
     username: postgres
     password: mysecretpassword
   liquibase:
     change-log: classpath:liquibase/changelog/db.changelog-master.xml
+    database-change-log-table: auth_databaseChangeLog
+    database-change-log-lock-table: auth_databaseChangeLogLock
+    parameters:
+      auth.schemaName: obauth
 
 
 webClient:
