@@ -16,7 +16,10 @@ spring:
     username: postgres
     password: mysecretpassword
   liquibase:
-    change-log: classpath:liquibase/changelog/db.changelog-master.xml
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    change-log: /liquibase/changelog.xml
+    url: ${spring.datasource.url}
     database-change-log-table: auth_databaseChangeLog
     database-change-log-lock-table: auth_databaseChangeLogLock
     parameters:
