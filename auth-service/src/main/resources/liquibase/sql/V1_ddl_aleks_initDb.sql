@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset aleks:HB-395-light-auth-service logicalFilePath:/
+--changeset aleks:initDB logicalFilePath:/
 
 CREATE SCHEMA ${auth.schemaName};
 

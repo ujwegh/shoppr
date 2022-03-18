@@ -24,7 +24,10 @@ public class AuthHandler {
         Mono<SignupResponse> result = body.flatMap(service::signup);
         return result
                 .flatMap(data -> ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).bodyValue(data))
-                .onErrorResume(error -> ServerResponse.badRequest().build());
+                .onErrorResume(error -> {
+                    error.printStackTrace();
+                    return ServerResponse.badRequest().build();
+                });
     }
 
     public Mono<ServerResponse> login (ServerRequest request){
